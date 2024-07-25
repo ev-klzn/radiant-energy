@@ -108,6 +108,22 @@ h6 {
   min-width: 0;
   grid-column: 3/4
 }
+.button {
+  display: inline-flex;
+  transition: all .3s;
+  border-radius: .25rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: #2d333a;
+  color: #fff
+}
+.button--white {
+  background-color: #fff;
+  color: #2d333a
+}
+.button--fw {
+  width: 100%
+}
 .menu__body {
   gap: 1.25rem
 }
@@ -178,7 +194,7 @@ h6 {
   -o-object-fit: contain;
   object-fit: contain
 }
-[class*="--colored"] {
+[class*=colored] {
   color: #ff8700
 }
 [class*=decor] {
@@ -190,10 +206,10 @@ h6 {
 [class*="--capital"] {
   text-transform: capitalize
 }
-[class*="--upp"] {
+[class*=upp] {
   text-transform: uppercase
 }
-[class*="--bold"] {
+[class*=bold] {
   font-weight: 700
 }
 address {
@@ -233,7 +249,43 @@ address {
   flex: 0 0 8.375rem;
   aspect-ratio: 134/40
 }
+.page__hero {
+  padding-top: 4.375rem
+}
+.hero {
+  position: relative
+}
+.hero__image {
+  aspect-ratio: 1922/923;
+  min-height: 21.875rem
+}
+.hero__body {
+  max-width: 41.5625rem;
+  display: grid;
+  justify-items: center;
+  margin-right: .9375rem;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  -webkit-transform: translate(0,-50%);
+  transform: translate(0,-50%);
+  z-index: 5;
+  background-color: #fff
+}
+.hero__title {
+  font-weight: 600;
+  line-height: 1.3
+}
 @media (min-width:87em) {
+  .button {
+    padding-left: 4.375rem
+  }
+  .button {
+    padding-right: 4.375rem
+  }
+  .button {
+    font-size: 1.25rem
+  }
   .menu__list {
     -webkit-column-gap: 3.125rem;
     -moz-column-gap: 3.125rem;
@@ -250,18 +302,48 @@ address {
   .header__logo {
     gap: 1.5rem
   }
+  .hero__body {
+    gap: 1.875rem
+  }
+  .hero__body {
+    padding: 2.5rem
+  }
+  .hero__title {
+    font-size: 2.625rem
+  }
 }
 @media (max-width:20em) {
+  .button {
+    padding-left: .9375rem
+  }
+  .button {
+    padding-right: .9375rem
+  }
+  .button {
+    font-size: 1.125rem
+  }
   .menu__item {
     font-size: 1.03125rem
   }
   .header__logo {
     gap: .9375rem
   }
+  .hero__body {
+    gap: .625rem
+  }
+  .hero__body {
+    padding: .625rem
+  }
+  .hero__title {
+    font-size: 1.125rem
+  }
 }
 @media (max-width:61.99875em) {
   .menu__list {
     row-gap: 1.375rem
+  }
+  .hero__image {
+    aspect-ratio: 1922/1300
   }
 }
 @media (max-width:47.99875em) {
@@ -364,6 +446,16 @@ address {
     gap: 0;
     grid-template-columns: auto 1fr auto auto
   }
+  .hero__image {
+    aspect-ratio: 1922/1400
+  }
+  .hero__body {
+    top: 58%;
+    left: 40%
+  }
+  .hero__title {
+    line-height: 1.2
+  }
 }
 @media (max-width:47.99875em) and (max-width:20em) {
   .menu__body::after {
@@ -373,6 +465,38 @@ address {
 @media (max-width:47.99875em) and (any-hover:none) {
   .icon-menu {
     cursor: default
+  }
+}
+@media (max-width:29.99875em) {
+  .hero__body {
+    top: 62%;
+    left: 40%
+  }
+}
+@media (min-width:20em) and (max-width:87em) {
+  .button {
+    padding-left: clamp(.9375rem ,-.088619403rem + 5.1305970149vw ,4.375rem)
+  }
+  .button {
+    padding-right: clamp(.9375rem ,-.088619403rem + 5.1305970149vw ,4.375rem)
+  }
+  .button {
+    font-size: clamp(1.125rem ,1.0876865672rem + .1865671642vw ,1.25rem)
+  }
+  .menu__item {
+    font-size: clamp(1.03125rem ,.9659514925rem + .3264925373vw ,1.25rem)
+  }
+  .header__logo {
+    gap: clamp(.9375rem ,.7695895522rem + .8395522388vw ,1.5rem)
+  }
+  .hero__body {
+    gap: clamp(.625rem ,.2518656716rem + 1.8656716418vw ,1.875rem)
+  }
+  .hero__body {
+    padding: clamp(.625rem ,.0652985075rem + 2.7985074627vw ,2.5rem)
+  }
+  .hero__title {
+    font-size: clamp(1.125rem ,.677238806rem + 2.2388059701vw ,2.625rem)
   }
 }
 @media (max-width:47.99875em) and (min-width:87em) {
@@ -397,15 +521,13 @@ address {
     column-gap: clamp(.9375rem ,-1.7546512932rem + 5.6087945899vw ,3.125rem)
   }
 }
-@media (min-width:20em) and (max-width:87em) {
-  .menu__item {
-    font-size: clamp(1.03125rem ,.9659514925rem + .3264925373vw ,1.25rem)
-  }
-  .header__logo {
-    gap: clamp(.9375rem ,.7695895522rem + .8395522388vw ,1.5rem)
-  }
-}
 @media (any-hover:hover) {
+  .button--white:hover {
+    color: #fff
+  }
+  .button:hover {
+    background-color: #ff8700
+  }
   .menu__link:hover {
     color: #ff8700
   }
