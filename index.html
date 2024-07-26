@@ -1,81 +1,152 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="uk">
-  <head>
-    <title>Radiant Energy</title>
-    <meta charset="UTF-8" />
-    <meta name="format-detection" content="telephone=no" />
-    <!-- <style>body{opacity: 0;}</style> -->
-    <link rel="stylesheet" href="css/style.min.css?_v=20240725170215" />
-    <link rel="shortcut icon" href="favicon.ico" />
-    <meta name="robots" content="noindex, nofollow" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  </head>
 
-  <body>
-    <div class="wrapper">
-      <header class="header">
-        <div class="header__container">
-          <a href="#" data-goto-header data-goto=".hero" class="header__logo">
-            <img
-              class="header__logo-img ibg ibg--contain"
-              src="img/icons/logo.svg"
-              alt="logo" />
-          </a>
-          <div class="header__menu menu">
-            <nav class="menu__body">
-              <ul class="menu__list">
-                <li data-goto-header data-goto=".about" class="menu__item">
-                  <a class="menu__link" href="#">Про компанію</a>
-                </li>
-                <li data-goto-header data-goto=".benefits" class="menu__item">
-                  <a class="menu__link" href="#">Переваги</a>
-                </li>
-                <li data-goto-header data-goto=".type" class="menu__item">
-                  <a class="menu__link" href="#">Підбір системи</a>
-                </li>
-                <li
-                  data-goto-header
-                  data-goto=".testimonials"
-                  class="menu__item">
-                  <a class="menu__link" href="#">Відгуки</a>
-                </li>
-                <li data-goto-header data-goto=".contacts" class="menu__item">
-                  <a class="menu__link" href="#">Контакти</a>
-                </li>
-              </ul>
-            </nav>
-          </div>
-          <button type="button" class="icon-menu"><span></span></button>
-        </div>
-      </header>
+<head>
+	<title>Radiant Energy</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20240726153427">
+	<link rel="shortcut icon" href="favicon.ico">
+	<meta name="robots" content="noindex, nofollow">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
 
-      <main class="page">
-        <section class="page__hero hero">
-          <div class="hero__img">
-            <img
-              class="hero__image ibg ibg–contain"
-              src="img/hero.webp"
-              alt="Image" />
-          </div>
-          <div class="hero__container">
-            <div class="hero__body">
-              <h1 class="hero__title title">
-                Обираєте <span class="colored upp bold">інновації</span> та
-                <span class="colored upp bold">надійність</span> — сонячні
-                панелі <span class="upp bold">Radiant</span>
-                <span class="colored upp bold">Energy</span>!
-              </h1>
-              <button type="submit" class="button">
-                Замовити консультацію
-              </button>
-            </div>
-          </div>
-        </section>
-      </main>
-      <footer class="footer">
-        <div class="footer__container"></div>
-      </footer>
-    </div>
-    <script src="js/app.min.js?_v=20240725170215"></script>
-  </body>
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<a href="#" data-goto-header data-goto=".hero" class="header__logo">
+					<img class="header__logo-img ibg ibg--contain" src="img/icons/logo.svg" alt="logo">
+				</a>
+				<div class="header__menu menu">
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li data-goto-header data-goto=".about" class="menu__item">
+								<a class="menu__link" href="#">Про компанію</a>
+							</li>
+							<li data-goto-header data-goto=".benefits" class="menu__item">
+								<a class="menu__link" href="#">Переваги</a>
+							</li>
+							<li data-goto-header data-goto=".type" class="menu__item">
+								<a class="menu__link" href="#">Підбір системи</a>
+							</li>
+							<li data-goto-header data-goto=".testimonials" class="menu__item">
+								<a class="menu__link" href="#">Відгуки</a>
+							</li>
+							<li data-goto-header data-goto=".contacts" class="menu__item">
+								<a class="menu__link" href="#">Контакти</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<button type="button" class="icon-menu"><span></span></button>
+			</div>
+		</header>
+
+		<main class="page">
+			<section class="page__hero hero">
+				<div class="hero__img">
+					<img class="hero__image ibg ibg–contain" src="img/hero.webp" alt="Image" />
+				</div>
+				<div class="hero__container">
+					<div class="hero__body">
+						<h1 class="hero__title title">
+							Обираєте <span class="colored upp bold">інновації</span> та
+							<span class="colored upp bold">надійність</span> — сонячні
+							панелі <span class="upp bold">Radiant</span>
+							<span class="colored upp bold">Energy</span>!
+						</h1>
+						<button type="submit" class="button">
+							Замовити консультацію
+						</button>
+					</div>
+				</div>
+			</section>
+			<section class="page__about about">
+				<div class="about__container">
+					<h2 class="subtitle-transparent">Історія компанії</h2>
+					<h3 class="subtitle-color">Історія компанії</h3>
+					<div data-showmore data-showmore-media="768,max" class="about-showmore">
+						<div data-showmore-content="150" class="about__content">
+							<p>
+								Історія компанії «Radiant Energy» почалася у 2010 році, коли
+								троє друзів, вирішили об'єднати свої зусилля та знання у сфері
+								енергетики і технологій для створення власного бізнесу з
+								встановлення сонячних панелей. Вони помітили зростаючу потребу
+								у відновлюваних джерелах енергії та вирішили зробити свій
+								внесок у боротьбу зі зміною клімату.
+							</p>
+							<p>
+								На початку своєї діяльності компанія працювала з невеликими
+								приватними замовниками, встановлюючи сонячні панелі на дахах
+								будинків. Перші кілька років були складними, оскільки ринок
+								тільки починав розвиватися, і багато людей не були впевнені у
+								доцільності інвестицій у сонячну енергію. Однак команда
+								Radiant Energy не здавалася, вони активно проводили
+								просвітницьку роботу, організовували семінари та виставки, щоб
+								пояснити переваги використання сонячних панелей.
+							</p>
+						</div>
+						<button hidden data-showmore-button type="button" class="about__more">
+							<span>Читати далі...</span><span>Сховати</span>
+						</button>
+					</div>
+				</div>
+			</section>
+			<section class="page__installed installed">
+				<!-- <img
+            class="installed__image ibg"
+            src="img/installed.webp"
+            alt="Image" /> -->
+				<div class="installed__container">
+					<div class="installed__list">
+						<article class="installed__item item-installed item-installed--first">
+							<h4 class="item-installed__title">досвід</h4>
+							<div class="item-installed__value">14</div>
+							<div class="item-installed__label">років</div>
+						</article>
+						<article class="installed__item item-installed item-installed--wide">
+							<h4 class="item-installed__title">встановили</h4>
+							<div class="item-installed__value">26750</div>
+							<div class="item-installed__label">панелей</div>
+						</article>
+						<article class="installed__item item-installed item-installed--third">
+							<h4 class="item-installed__title">працюємо</h4>
+							<div class="item-installed__value">96</div>
+							<div class="item-installed__label">країнах</div>
+						</article>
+					</div>
+					<div class="installed__area">
+						<div class="installed__area-item item-area">
+							<div class="item-area__img">
+								<img class="item-area__image item-area__image--objects ibg ibg-contain" src="img/objects.svg" alt="Image" />
+							</div>
+							<div class="item-area__label">
+								Технології розроблені німецькими інженерами
+							</div>
+						</div>
+						<div class="installed__area-item item-area">
+							<div class="item-area__img">
+								<img class="item-area__image item-area__image--eu ibg ibg-contain" src="img/eu.svg" alt="Image" />
+							</div>
+							<div class="item-area__label">
+								Виробничі потужності розташовані у Європі
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+			</div>
+		</footer>
+		<div><!-- <h2 class="subtitle-transparent">Історія компанії</h2>
+<h3 class="subtitle-color">subtitle-2</h3> -->
+		</div>
+	</div>
+	<script src="js/app.min.js?_v=20240726153427"></script>
+</body>
+
 </html>
