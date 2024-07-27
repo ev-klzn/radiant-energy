@@ -246,6 +246,9 @@ address {
   color: #fff;
   margin-top: 0
 }
+.subtitle-color--non-margin {
+  margin-top: 0
+}
 .text p {
   text-align: justify
 }
@@ -316,6 +319,7 @@ address {
 }
 .about {
   background: url(../img/icons/sun.svg) 95% 0 no-repeat;
+  background-size: auto 100%;
   background-color: #f6f7f8
 }
 .about__content {
@@ -330,7 +334,8 @@ address {
 }
 .installed {
   color: #fff;
-  background: url(../img/installed.webp) 0 0 repeat
+  background: url(../img/installed.webp) 0 0 no-repeat;
+  background-size: auto 100%
 }
 .installed__list {
   display: grid;
