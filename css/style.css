@@ -529,8 +529,8 @@ address {
   .header__logo {
     gap: 1.5rem
   }
-  .page__hero {
-    margin-bottom: 6.25rem
+  .page__about {
+    padding-top: 6.25rem
   }
   .page__about {
     padding-bottom: 6.25rem
@@ -674,8 +674,8 @@ address {
   .header__logo {
     gap: .9375rem
   }
-  .page__hero {
-    margin-bottom: 2.1875rem
+  .page__about {
+    padding-top: 2.1875rem
   }
   .page__about {
     padding-bottom: 2.1875rem
@@ -990,8 +990,8 @@ address {
   .header__logo {
     gap: clamp(.9375rem ,.7695895522rem + .8395522388vw ,1.5rem)
   }
-  .page__hero {
-    margin-bottom: clamp(2.1875rem ,.9748134328rem + 6.0634328358vw ,6.25rem)
+  .page__about {
+    padding-top: clamp(2.1875rem ,.9748134328rem + 6.0634328358vw ,6.25rem)
   }
   .page__about {
     padding-bottom: clamp(2.1875rem ,.9748134328rem + 6.0634328358vw ,6.25rem)
