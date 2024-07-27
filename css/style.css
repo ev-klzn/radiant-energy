@@ -672,15 +672,17 @@ address {
     font-size: 1.25rem
   }
 }
+@media (max-width:71.875rem) {
+  .benefits__list {
+    grid-template-columns: repeat(2,1fr)
+  }
+}
 @media (max-width:61.99875em) {
   .menu__list {
     row-gap: 1.375rem
   }
   .hero__image {
     aspect-ratio: 1922/1300
-  }
-  .benefits__list {
-    grid-template-columns: repeat(2,1fr)
   }
   .item-benefits__header {
     text-align: center
