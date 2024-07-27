@@ -388,6 +388,29 @@ address {
   font-weight: 500;
   text-transform: uppercase
 }
+.benefits__list {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  align-items: start
+}
+.item-benefits {
+  background-color: #fff
+}
+.item-benefits__header {
+  display: flex;
+  align-items: center
+}
+.item-benefits__image {
+  width: 6.25rem;
+  aspect-ratio: 100/100
+}
+.item-benefits__title {
+  color: #ff8700;
+  font-family: Roboto;
+  font-size: 24px;
+  font-weight: 500;
+  text-transform: uppercase
+}
 @media (min-width:61.99875em) {
   .installed__list {
     grid-template-columns: repeat(4,1fr);
@@ -450,6 +473,12 @@ address {
   .page__about {
     padding-bottom: 6.25rem
   }
+  .page__benefits {
+    padding-top: 5rem
+  }
+  .page__benefits {
+    padding-bottom: 4.0625rem
+  }
   .hero__body {
     gap: 1.875rem
   }
@@ -503,6 +532,27 @@ address {
   .item-area__label {
     font-size: 2rem
   }
+  .benefits__list {
+    gap: 1.875rem
+  }
+  .item-benefits {
+    padding-top: 1.875rem
+  }
+  .item-benefits {
+    padding-bottom: 1.875rem
+  }
+  .item-benefits {
+    padding-left: 1.25rem
+  }
+  .item-benefits {
+    padding-right: 1.25rem
+  }
+  .item-benefits__header {
+    gap: 1.25rem
+  }
+  .item-benefits__title {
+    font-size: 1.5rem
+  }
 }
 @media (max-width:20em) {
   .button {
@@ -540,6 +590,12 @@ address {
   }
   .page__about {
     padding-bottom: 2.1875rem
+  }
+  .page__benefits {
+    padding-top: 3.125rem
+  }
+  .page__benefits {
+    padding-bottom: 2.5rem
   }
   .hero__body {
     gap: .625rem
@@ -594,6 +650,27 @@ address {
   .item-area__label {
     font-size: 1.25rem
   }
+  .benefits__list {
+    gap: .9375rem
+  }
+  .item-benefits {
+    padding-top: .9375rem
+  }
+  .item-benefits {
+    padding-bottom: .9375rem
+  }
+  .item-benefits {
+    padding-left: .9375rem
+  }
+  .item-benefits {
+    padding-right: .9375rem
+  }
+  .item-benefits__header {
+    gap: .9375rem
+  }
+  .item-benefits__title {
+    font-size: 1.25rem
+  }
 }
 @media (max-width:61.99875em) {
   .menu__list {
@@ -601,6 +678,12 @@ address {
   }
   .hero__image {
     aspect-ratio: 1922/1300
+  }
+  .benefits__list {
+    grid-template-columns: repeat(2,1fr)
+  }
+  .item-benefits__header {
+    text-align: center
   }
 }
 @media (max-width:57.8125em) {
@@ -721,6 +804,12 @@ address {
   .item-installed__value {
     -webkit-text-stroke-width: 2px
   }
+  .benefits__list {
+    grid-template-columns: auto
+  }
+  .item-benefits__header {
+    flex-direction: column
+  }
 }
 @media (max-width:47.99875em) and (max-width:20em) {
   .menu__body::after {
@@ -779,6 +868,12 @@ address {
   .page__about {
     padding-bottom: clamp(2.1875rem ,.9748134328rem + 6.0634328358vw ,6.25rem)
   }
+  .page__benefits {
+    padding-top: clamp(3.125rem ,2.5652985075rem + 2.7985074627vw ,5rem)
+  }
+  .page__benefits {
+    padding-bottom: clamp(2.5rem ,2.0335820896rem + 2.3320895522vw ,4.0625rem)
+  }
   .hero__body {
     gap: clamp(.625rem ,.2518656716rem + 1.8656716418vw ,1.875rem)
   }
@@ -831,6 +926,27 @@ address {
   }
   .item-area__label {
     font-size: clamp(1.25rem ,1.026119403rem + 1.1194029851vw ,2rem)
+  }
+  .benefits__list {
+    gap: clamp(.9375rem ,.6576492537rem + 1.3992537313vw ,1.875rem)
+  }
+  .item-benefits {
+    padding-top: clamp(.9375rem ,.6576492537rem + 1.3992537313vw ,1.875rem)
+  }
+  .item-benefits {
+    padding-bottom: clamp(.9375rem ,.6576492537rem + 1.3992537313vw ,1.875rem)
+  }
+  .item-benefits {
+    padding-left: clamp(.9375rem ,.8442164179rem + .4664179104vw ,1.25rem)
+  }
+  .item-benefits {
+    padding-right: clamp(.9375rem ,.8442164179rem + .4664179104vw ,1.25rem)
+  }
+  .item-benefits__header {
+    gap: clamp(.9375rem ,.8442164179rem + .4664179104vw ,1.25rem)
+  }
+  .item-benefits__title {
+    font-size: clamp(1.25rem ,1.1753731343rem + .3731343284vw ,1.5rem)
   }
 }
 @media (max-width:47.99875em) and (min-width:87em) {
