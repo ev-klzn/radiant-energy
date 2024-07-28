@@ -37,7 +37,7 @@ textarea {
   font-size: inherit;
   line-height: inherit;
   color: inherit;
-  background-color: transparent
+  background-color: rgba(0,0,0,0)
 }
 input,
 textarea {
@@ -92,10 +92,10 @@ body {
     overflow: clip
   }
 }
-.wrapper > main {
+.wrapper>main {
   flex: 1 1 auto
 }
-.wrapper > * {
+.wrapper>* {
   min-width: 0
 }
 [class*=__container] {
@@ -108,7 +108,7 @@ body {
   min-width: 0;
   grid-template-columns: .9375rem 1fr minmax(auto,85.125rem) 1fr .9375rem
 }
-[class*="--gc"] > * {
+[class*="--gc"]>* {
   min-width: 0;
   grid-column: 3/4
 }
@@ -136,7 +136,7 @@ body {
   color: #fff;
   text-align: center;
   width: auto;
-  max-width: 41.625rem;
+  max-width: 48rem;
   margin-left: 1.25rem;
   margin-right: 1.25rem
 }
@@ -334,7 +334,7 @@ address {
 }
 .installed {
   color: #fff;
-  background: url(../img/installed.webp) 0 0 no-repeat;
+  background: url(../img/installed.jpg) 0 0 no-repeat;
   background-size: auto 100%
 }
 .installed__list {
@@ -458,8 +458,7 @@ address {
   color: #2d333a;
   background: #fff;
   display: flex;
-  flex-direction: column;
-  align-items: center
+  flex-direction: column
 }
 .type-item__body {
   height: 100%;
@@ -475,6 +474,105 @@ address {
   font-family: Roboto;
   font-weight: 500;
   text-transform: uppercase
+}
+.kit__list {
+  display: grid;
+  grid-template-columns: repeat(6,1fr)
+}
+.kit__title {
+  display: inline-flex;
+  align-items: center;
+  align-self: center;
+  gap: .5rem;
+  justify-content: flex-end;
+  font-weight: 600
+}
+.kit__title::before {
+  color: #ff8700;
+  display: inline-block;
+  font-size: 3.125rem
+}
+.kit__1 {
+  background-color: #fff;
+  grid-area: 1/1/2/3
+}
+.kit__2 {
+  background-color: #fff;
+  grid-area: 1/3/3/7
+}
+.kit__2-image {
+  aspect-ratio: 4/2
+}
+.kit__3 {
+  background-color: #fff;
+  grid-area: 2/1/5/3
+}
+.kit__3 .kit__body .kit__title::before {
+  padding-right: .625rem;
+  content: "1"
+}
+.kit__3-image {
+  aspect-ratio: 1/1.5
+}
+.kit__4 {
+  display: flex;
+  flex-direction: column;
+  gap: 1.875rem;
+  background-color: #fff;
+  grid-area: 3/3/5/5
+}
+.kit__4 .kit__body .kit__title::before {
+  padding-right: .625rem;
+  content: "2"
+}
+.kit__4--reverse {
+  flex-direction: column-reverse
+}
+.kit__4-image {
+  aspect-ratio: 1.5/1
+}
+.kit__5 {
+  background-color: #fff;
+  grid-area: 3/5/5/7
+}
+.kit__5 .kit__body .kit__title::before {
+  content: "3";
+  padding-right: .625rem
+}
+.kit__5-image {
+  aspect-ratio: 1.5/1
+}
+.kit__6 {
+  display: flex;
+  background-color: #fff;
+  grid-area: 5/1/6/4
+}
+.kit__6 .kit__body .kit__title::before {
+  padding-right: .625rem;
+  content: "4"
+}
+.kit__6--reverse {
+  flex-direction: row-reverse
+}
+.kit__6-image {
+  width: 16.25rem;
+  aspect-ratio: 2/1
+}
+.kit__7 {
+  display: flex;
+  background-color: #fff;
+  grid-area: 5/4/6/7
+}
+.kit__7 .kit__body .kit__title::before {
+  padding-right: .625rem;
+  content: "5"
+}
+.kit__7--reverse {
+  flex-direction: row-reverse
+}
+.kit__7-image {
+  width: 16.25rem;
+  aspect-ratio: 2/1
 }
 @media (min-width:61.99875em) {
   .installed__list {
@@ -545,6 +643,12 @@ address {
     padding-top: 5rem
   }
   .page__type {
+    padding-bottom: 4.0625rem
+  }
+  .page__kit {
+    padding-top: 5rem
+  }
+  .page__kit {
     padding-bottom: 4.0625rem
   }
   .hero__body {
@@ -645,6 +749,15 @@ address {
   .type-item__text {
     padding-right: 1.875rem
   }
+  .kit__list {
+    gap: 1.875rem
+  }
+  .kit__title {
+    font-size: 2rem
+  }
+  .kit__body {
+    padding: 1.875rem
+  }
 }
 @media (max-width:20em) {
   .button {
@@ -690,6 +803,12 @@ address {
     padding-top: 3.125rem
   }
   .page__type {
+    padding-bottom: 2.5rem
+  }
+  .page__kit {
+    padding-top: 3.125rem
+  }
+  .page__kit {
     padding-bottom: 2.5rem
   }
   .hero__body {
@@ -789,6 +908,15 @@ address {
   }
   .type-item__text {
     padding-right: .9375rem
+  }
+  .kit__list {
+    gap: 1.25rem
+  }
+  .kit__title {
+    font-size: 1.375rem
+  }
+  .kit__body {
+    padding: .9375rem
   }
 }
 @media (max-width:71.875rem) {
@@ -942,12 +1070,12 @@ address {
     margin-bottom: .9375rem
   }
 }
-@media (max-width:47.99875em) and (max-width:20em) {
+@media (max-width:47.99875em)and (max-width:20em) {
   .menu__body::after {
     height: 4.375rem
   }
 }
-@media (max-width:47.99875em) and (any-hover:none) {
+@media (max-width:47.99875em)and (any-hover:none) {
   .icon-menu {
     cursor: default
   }
@@ -962,7 +1090,7 @@ address {
     justify-items: center
   }
 }
-@media (min-width:20em) and (max-width:87em) {
+@media (min-width:20em)and (max-width:87em) {
   .button {
     font-size: clamp(1.125rem ,1.0876865672rem + .1865671642vw ,1.25rem)
   }
@@ -1006,6 +1134,12 @@ address {
     padding-top: clamp(3.125rem ,2.5652985075rem + 2.7985074627vw ,5rem)
   }
   .page__type {
+    padding-bottom: clamp(2.5rem ,2.0335820896rem + 2.3320895522vw ,4.0625rem)
+  }
+  .page__kit {
+    padding-top: clamp(3.125rem ,2.5652985075rem + 2.7985074627vw ,5rem)
+  }
+  .page__kit {
     padding-bottom: clamp(2.5rem ,2.0335820896rem + 2.3320895522vw ,4.0625rem)
   }
   .hero__body {
@@ -1106,18 +1240,27 @@ address {
   .type-item__text {
     padding-right: clamp(.9375rem ,.6576492537rem + 1.3992537313vw ,1.875rem)
   }
+  .kit__list {
+    gap: clamp(1.25rem ,1.0634328358rem + .9328358209vw ,1.875rem)
+  }
+  .kit__title {
+    font-size: clamp(1.375rem ,1.1884328358rem + .9328358209vw ,2rem)
+  }
+  .kit__body {
+    padding: clamp(.9375rem ,.6576492537rem + 1.3992537313vw ,1.875rem)
+  }
 }
-@media (max-width:47.99875em) and (min-width:87em) {
+@media (max-width:47.99875em)and (min-width:87em) {
   .menu__body::after {
     height: 7.25rem
   }
 }
-@media (max-width:47.99875em) and (min-width:20em) and (max-width:87em) {
+@media (max-width:47.99875em)and (min-width:20em)and (max-width:87em) {
   .menu__body::after {
     height: clamp(4.375rem ,3.5167910448rem + 4.2910447761vw ,7.25rem)
   }
 }
-@media (min-width:47.99875em) and (max-width:87em) {
+@media (min-width:47.99875em)and (max-width:87em) {
   .menu__list {
     -webkit-column-gap: clamp(.625rem ,-2.4517443351rem + 6.4100509599vw ,3.125rem);
     -moz-column-gap: clamp(.625rem ,-2.4517443351rem + 6.4100509599vw ,3.125rem);
