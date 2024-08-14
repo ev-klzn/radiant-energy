@@ -246,11 +246,7 @@ address {
   text-transform: uppercase
 }
 .subtitle-color--white {
-  color: #fff;
-  margin-top: 0
-}
-.subtitle-color--non-margin {
-  margin-top: 0
+  color: #fff
 }
 .text p {
   overflow-wrap: break-word
@@ -647,10 +643,10 @@ address {
   .subtitle-color {
     font-size: 2.625rem
   }
-  .subtitle-color {
+  .subtitle-color--margin-top {
     margin-top: -2.8125rem
   }
-  .subtitle-color {
+  .subtitle-color--margin-bottom {
     margin-bottom: 2.5rem
   }
   .text p {
@@ -875,10 +871,10 @@ address {
   .subtitle-color {
     font-size: 1.625rem
   }
-  .subtitle-color {
+  .subtitle-color--margin-top {
     margin-top: -1.25rem
   }
-  .subtitle-color {
+  .subtitle-color--margin-bottom {
     margin-bottom: 1.5625rem
   }
   .text p {
@@ -1285,10 +1281,10 @@ address {
   .subtitle-color {
     font-size: clamp(1.625rem ,1.3264925373rem + 1.4925373134vw ,2.625rem)
   }
-  .subtitle-color {
+  .subtitle-color--margin-top {
     margin-top: clamp(-2.8125rem ,-.7835820896rem + -2.3320895522vw ,-1.25rem)
   }
-  .subtitle-color {
+  .subtitle-color--margin-bottom {
     margin-bottom: clamp(1.5625rem ,1.2826492537rem + 1.3992537313vw ,2.5rem)
   }
   .text p {
