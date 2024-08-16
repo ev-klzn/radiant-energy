@@ -140,6 +140,10 @@ body {
   margin-left: 1.25rem;
   margin-right: 1.25rem
 }
+.button--transparent {
+  background-color: rgba(0,0,0,0);
+  border: 1px solid #fff
+}
 .button--fw {
   width: 100%
 }
@@ -593,15 +597,50 @@ address {
   align-items: center;
   align-content: center
 }
-.best__title {
-  margin-top: 0;
-  margin-bottom: 0
-}
 .best__img {
   max-width: 51.8125rem
 }
 .best__image {
   aspect-ratio: 829/600
+}
+.together {
+  background: url(../img/installed.webp) 0 0 no-repeat;
+  background-size: auto 100%
+}
+.together__container {
+  text-align: center
+}
+.together-tab {
+  display: grid;
+  justify-items: center
+}
+.together-tab__navigation {
+  display: flex
+}
+.together-tab__navigation:not(:last-child) {
+  margin-bottom: 3.125rem
+}
+.together-tab__titles {
+  text-transform: uppercase;
+  color: #fff;
+  font-family: Roboto;
+  font-weight: 500
+}
+.together-tab__title {
+  max-width: 50rem;
+  color: #fff;
+  font-weight: 700
+}
+.together-tab__title span {
+  text-transform: uppercase;
+  font-weight: 700
+}
+.together-tab__title:not(:last-child) {
+  margin-bottom: 3.125rem
+}
+._tab-active {
+  border-bottom: 1px solid #ff8700;
+  color: #ff8700
 }
 @media (min-width:61.99875em) {
   .installed__list {
@@ -688,7 +727,16 @@ address {
     padding-top: 5rem
   }
   .page__best {
-    padding-bottom: 4.0625rem
+    margin-bottom: 6.25rem
+  }
+  .page__together {
+    padding-top: 3.75rem
+  }
+  .page__together {
+    padding-bottom: 5.625rem
+  }
+  .page__together {
+    margin-bottom: 6.25rem
   }
   .hero__body {
     gap: 1.875rem
@@ -818,6 +866,24 @@ address {
   .best__body {
     padding-right: 2.5rem
   }
+  .together__title:not(:last-child) {
+    margin-bottom: 2.5rem
+  }
+  .together-tab__navigation {
+    gap: 3.75rem
+  }
+  .together-tab__titles {
+    padding-top: 1.25rem
+  }
+  .together-tab__titles {
+    padding-bottom: 1.25rem
+  }
+  .together-tab__titles {
+    font-size: 1.5rem
+  }
+  .together-tab__title {
+    font-size: 2.25rem
+  }
 }
 @media (max-width:87em) {
   .kit__6 {
@@ -905,13 +971,22 @@ address {
     padding-top: 3.125rem
   }
   .page__kit {
-    padding-bottom: 2.5rem
+    padding-bottom: 1.5625rem
   }
   .page__best {
-    padding-top: 3.125rem
+    padding-top: 1.5625rem
   }
   .page__best {
-    padding-bottom: 2.5rem
+    margin-bottom: 3.125rem
+  }
+  .page__together {
+    padding-top: 2.5rem
+  }
+  .page__together {
+    padding-bottom: 3.125rem
+  }
+  .page__together {
+    margin-bottom: 3.125rem
   }
   .hero__body {
     gap: .625rem
@@ -1025,6 +1100,24 @@ address {
   }
   .best__body {
     padding-right: .9375rem
+  }
+  .together__title:not(:last-child) {
+    margin-bottom: 1.875rem
+  }
+  .together-tab__navigation {
+    gap: 1.25rem
+  }
+  .together-tab__titles {
+    padding-top: .625rem
+  }
+  .together-tab__titles {
+    padding-bottom: .625rem
+  }
+  .together-tab__titles {
+    font-size: 1.25rem
+  }
+  .together-tab__title {
+    font-size: 1.5rem
   }
 }
 @media (max-width:71.875rem) {
@@ -1315,13 +1408,22 @@ address {
     padding-top: clamp(3.125rem ,2.5652985075rem + 2.7985074627vw ,5rem)
   }
   .page__kit {
-    padding-bottom: clamp(2.5rem ,2.0335820896rem + 2.3320895522vw ,4.0625rem)
+    padding-bottom: clamp(1.5625rem ,.8162313433rem + 3.7313432836vw ,4.0625rem)
   }
   .page__best {
-    padding-top: clamp(3.125rem ,2.5652985075rem + 2.7985074627vw ,5rem)
+    padding-top: clamp(1.5625rem ,.536380597rem + 5.1305970149vw ,5rem)
   }
   .page__best {
-    padding-bottom: clamp(2.5rem ,2.0335820896rem + 2.3320895522vw ,4.0625rem)
+    margin-bottom: clamp(3.125rem ,2.1921641791rem + 4.6641791045vw ,6.25rem)
+  }
+  .page__together {
+    padding-top: clamp(2.5rem ,2.1268656716rem + 1.8656716418vw ,3.75rem)
+  }
+  .page__together {
+    padding-bottom: clamp(3.125rem ,2.3787313433rem + 3.7313432836vw ,5.625rem)
+  }
+  .page__together {
+    margin-bottom: clamp(3.125rem ,2.1921641791rem + 4.6641791045vw ,6.25rem)
   }
   .hero__body {
     gap: clamp(.625rem ,.2518656716rem + 1.8656716418vw ,1.875rem)
@@ -1436,6 +1538,24 @@ address {
   .best__body {
     padding-right: clamp(.9375rem ,.4710820896rem + 2.3320895522vw ,2.5rem)
   }
+  .together__title:not(:last-child) {
+    margin-bottom: clamp(1.875rem ,1.6884328358rem + .9328358209vw ,2.5rem)
+  }
+  .together-tab__navigation {
+    gap: clamp(1.25rem ,.5037313433rem + 3.7313432836vw ,3.75rem)
+  }
+  .together-tab__titles {
+    padding-top: clamp(.625rem ,.4384328358rem + .9328358209vw ,1.25rem)
+  }
+  .together-tab__titles {
+    padding-bottom: clamp(.625rem ,.4384328358rem + .9328358209vw ,1.25rem)
+  }
+  .together-tab__titles {
+    font-size: clamp(1.25rem ,1.1753731343rem + .3731343284vw ,1.5rem)
+  }
+  .together-tab__title {
+    font-size: clamp(1.5rem ,1.276119403rem + 1.1194029851vw ,2.25rem)
+  }
 }
 @media (max-width:47.99875em)and (min-width:87em) {
   .menu__body::after {
@@ -1482,6 +1602,9 @@ address {
   }
   .button--blue:hover {
     color: #fff
+  }
+  .button--transparent:hover {
+    border: 1px solid #ff8700
   }
   .button:hover {
     background-color: #ff8700
