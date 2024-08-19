@@ -624,7 +624,8 @@ address {
   text-transform: uppercase;
   color: #fff;
   font-family: Roboto;
-  font-weight: 500
+  font-weight: 500;
+  border-bottom: 1px solid transparent
 }
 .together-tab__title {
   max-width: 50rem;
@@ -638,7 +639,7 @@ address {
 .together-tab__title:not(:last-child) {
   margin-bottom: 3.125rem
 }
-._tab-active {
+.together-tab ._tab-active {
   border-bottom: 1px solid #ff8700;
   color: #ff8700
 }
