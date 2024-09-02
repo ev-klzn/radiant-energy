@@ -235,13 +235,12 @@ address {
   text-align: center;
   color: transparent;
   font-style: normal;
-  font-family: Montserrat;
   font-family: Roboto;
   -webkit-text-stroke-width: .125rem;
   -webkit-text-stroke-color: #ffddb7;
   font-weight: 700;
-  letter-spacing: .9375rem;
-  text-transform: uppercase
+  text-transform: uppercase;
+  letter-spacing: .9375rem
 }
 .subtitle-color {
   line-height: 1.2;
@@ -643,6 +642,87 @@ address {
   border-bottom: 1px solid #ff8700;
   color: #ff8700
 }
+.models {
+  background: #fff
+}
+.models__label {
+  font-family: Roboto
+}
+.models-tabs__navigation {
+  border-radius: .25rem;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  transition: none
+}
+.models-tabs__title {
+  display: inline-flex;
+  transition: color .3s,background-color .3s;
+  border-radius: .25rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: .9375rem;
+  padding-right: .9375rem;
+  border: 1px solid #2d333a;
+  width: 100%;
+  text-align: center;
+  justify-content: center
+}
+.models-tabs ._tab-active {
+  background-color: #2d333a;
+  color: #fff
+}
+.model__title {
+  color: #ff8700;
+  margin-bottom: 1.25rem
+}
+.model__lebel {
+  font-size: 1.25rem;
+  margin-bottom: 2.5rem
+}
+.model__content {
+  gap: 1.875rem;
+  align-content: center;
+  justify-items: center
+}
+.model__image {
+  aspect-ratio: 660/580
+}
+.model__advantages {
+  display: grid;
+  gap: 1.5rem;
+  box-shadow: 0 15px 20px 0 rgba(105,55,0,.05)
+}
+.model__advantage {
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #ffddb7;
+  padding-left: 2.8125rem;
+  position: relative
+}
+.model__advantage::before {
+  margin-left: -2.8125rem;
+  content: "";
+  position: absolute;
+  top: 50%;
+  height: 1.5625rem;
+  width: 1.5625rem;
+  -webkit-transform: translate(0,-50%);
+  transform: translate(0,-50%);
+  background: url(../img/icons/top.svg) 100% no-repeat
+}
+.model__advantage-title {
+  font-weight: 600;
+  margin-bottom: .75rem
+}
+.model__advantage-label {
+  color: #616973
+}
+@media (min-width:47.99875em) {
+  .model__content {
+    display: grid;
+    gap: 2.1875rem;
+    grid-template-columns: repeat(2,1fr)
+  }
+}
 @media (min-width:61.99875em) {
   .installed__list {
     grid-template-columns: repeat(4,1fr);
@@ -661,6 +741,12 @@ address {
     grid-column: 3/6;
     display: flex
   }
+  .models-tabs__title {
+    max-width: 24.1875rem
+  }
+  .model__advantages {
+    padding: 1.25rem
+  }
 }
 @media (min-width:87em) {
   .button {
@@ -678,7 +764,7 @@ address {
     font-size: 1.25rem
   }
   .subtitle-transparent {
-    font-size: 6.25rem
+    font-size: 7.5rem
   }
   .subtitle-color {
     font-size: 2.625rem
@@ -736,7 +822,13 @@ address {
   .page__together {
     padding-bottom: 5.625rem
   }
-  .page__together {
+  .page__models {
+    padding-top: 6.25rem
+  }
+  .page__models {
+    padding-bottom: 6.25rem
+  }
+  .page__models {
     margin-bottom: 6.25rem
   }
   .hero__body {
@@ -885,6 +977,27 @@ address {
   .together-tab__title {
     font-size: 2.25rem
   }
+  .models__label {
+    font-size: 1.5rem
+  }
+  .models__label {
+    margin-bottom: 2.5rem
+  }
+  .models-tabs__navigation {
+    margin-bottom: 3.125rem
+  }
+  .models-tabs__navigation {
+    gap: 1.875rem
+  }
+  .models-tabs__title {
+    font-size: 1.25rem
+  }
+  .model__title {
+    font-size: 2.625rem
+  }
+  .model__advantage-title {
+    font-size: 2rem
+  }
 }
 @media (max-width:87em) {
   .kit__6 {
@@ -933,7 +1046,7 @@ address {
     font-size: 1.03125rem
   }
   .subtitle-transparent {
-    font-size: 2.1875rem
+    font-size: 1.5625rem
   }
   .subtitle-color {
     font-size: 1.625rem
@@ -986,7 +1099,13 @@ address {
   .page__together {
     padding-bottom: 3.125rem
   }
-  .page__together {
+  .page__models {
+    padding-top: 3.125rem
+  }
+  .page__models {
+    padding-bottom: 3.125rem
+  }
+  .page__models {
     margin-bottom: 3.125rem
   }
   .hero__body {
@@ -1120,6 +1239,27 @@ address {
   .together-tab__title {
     font-size: 1.5rem
   }
+  .models__label {
+    font-size: 1.25rem
+  }
+  .models__label {
+    margin-bottom: 1.5625rem
+  }
+  .models-tabs__navigation {
+    margin-bottom: 2.1875rem
+  }
+  .models-tabs__navigation {
+    gap: .9375rem
+  }
+  .models-tabs__title {
+    font-size: 1.125rem
+  }
+  .model__title {
+    font-size: 1.5rem
+  }
+  .model__advantage-title {
+    font-size: 1.375rem
+  }
 }
 @media (max-width:71.875rem) {
   .benefits__list {
@@ -1156,6 +1296,9 @@ address {
   .best__img {
     max-width: -webkit-max-content;
     max-width: max-content
+  }
+  .models-tabs__navigation {
+    grid-template-columns: auto
   }
 }
 @media (max-width:57.8125em) {
@@ -1370,7 +1513,7 @@ address {
     font-size: clamp(1.03125rem ,.9659514925rem + .3264925373vw ,1.25rem)
   }
   .subtitle-transparent {
-    font-size: clamp(2.1875rem ,.9748134328rem + 6.0634328358vw ,6.25rem)
+    font-size: clamp(1.5625rem ,-.2098880597rem + 8.8619402985vw ,7.5rem)
   }
   .subtitle-color {
     font-size: clamp(1.625rem ,1.3264925373rem + 1.4925373134vw ,2.625rem)
@@ -1423,7 +1566,13 @@ address {
   .page__together {
     padding-bottom: clamp(3.125rem ,2.3787313433rem + 3.7313432836vw ,5.625rem)
   }
-  .page__together {
+  .page__models {
+    padding-top: clamp(3.125rem ,2.1921641791rem + 4.6641791045vw ,6.25rem)
+  }
+  .page__models {
+    padding-bottom: clamp(3.125rem ,2.1921641791rem + 4.6641791045vw ,6.25rem)
+  }
+  .page__models {
     margin-bottom: clamp(3.125rem ,2.1921641791rem + 4.6641791045vw ,6.25rem)
   }
   .hero__body {
@@ -1556,6 +1705,27 @@ address {
   }
   .together-tab__title {
     font-size: clamp(1.5rem ,1.276119403rem + 1.1194029851vw ,2.25rem)
+  }
+  .models__label {
+    font-size: clamp(1.25rem ,1.1753731343rem + .3731343284vw ,1.5rem)
+  }
+  .models__label {
+    margin-bottom: clamp(1.5625rem ,1.2826492537rem + 1.3992537313vw ,2.5rem)
+  }
+  .models-tabs__navigation {
+    margin-bottom: clamp(2.1875rem ,1.9076492537rem + 1.3992537313vw ,3.125rem)
+  }
+  .models-tabs__navigation {
+    gap: clamp(.9375rem ,.6576492537rem + 1.3992537313vw ,1.875rem)
+  }
+  .models-tabs__title {
+    font-size: clamp(1.125rem ,1.0876865672rem + .1865671642vw ,1.25rem)
+  }
+  .model__title {
+    font-size: clamp(1.5rem ,1.1641791045rem + 1.6791044776vw ,2.625rem)
+  }
+  .model__advantage-title {
+    font-size: clamp(1.375rem ,1.1884328358rem + .9328358209vw ,2rem)
   }
 }
 @media (max-width:47.99875em)and (min-width:87em) {
