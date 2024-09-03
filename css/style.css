@@ -716,6 +716,55 @@ address {
 .model__advantage-label {
   color: #616973
 }
+.core {
+  background-color: #020f59;
+  color: #fff
+}
+.core__list {
+  display: flex
+}
+.core__column {
+  flex: 0 1 33%;
+  display: grid
+}
+.core__item {
+  border-radius: .25rem;
+  border: 1px solid #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end
+}
+.core__item--image {
+  justify-content: flex-start;
+  background: url(../img/values/values.webp) center no-repeat;
+  background-size: auto 100%;
+  display: flex;
+  flex-direction: column-reverse;
+  position: relative
+}
+.core__item--image::before {
+  z-index: 1;
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg,rgba(2,15,89,.1) 0,rgba(2,15,89,.5) 50%,rgba(2,15,89,.6) 70%,rgba(2,15,89,.7) 90%)
+}
+.core__title {
+  font-family: Roboto;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: .625rem
+}
+.core__content {
+  position: relative;
+  z-index: 2
+}
+.core__more {
+  padding-top: .3125rem
+}
 @media (min-width:47.99875em) {
   .model__content {
     display: grid;
@@ -746,6 +795,9 @@ address {
   }
   .model__advantages {
     padding: 1.25rem
+  }
+  .core__item {
+    min-height: 18.75rem
   }
 }
 @media (min-width:87em) {
@@ -828,8 +880,11 @@ address {
   .page__models {
     padding-bottom: 6.25rem
   }
-  .page__models {
-    margin-bottom: 6.25rem
+  .page__core {
+    padding-top: 6.25rem
+  }
+  .page__core {
+    padding-bottom: 6.25rem
   }
   .hero__body {
     gap: 1.875rem
@@ -998,6 +1053,18 @@ address {
   .model__advantage-title {
     font-size: 2rem
   }
+  .core__list {
+    gap: 1.875rem
+  }
+  .core__column {
+    gap: 1.875rem
+  }
+  .core__item {
+    padding: 1.875rem
+  }
+  .core__title {
+    font-size: 2rem
+  }
 }
 @media (max-width:87em) {
   .kit__6 {
@@ -1105,8 +1172,11 @@ address {
   .page__models {
     padding-bottom: 3.125rem
   }
-  .page__models {
-    margin-bottom: 3.125rem
+  .page__core {
+    padding-top: 3.125rem
+  }
+  .page__core {
+    padding-bottom: 3.125rem
   }
   .hero__body {
     gap: .625rem
@@ -1260,6 +1330,18 @@ address {
   .model__advantage-title {
     font-size: 1.375rem
   }
+  .core__list {
+    gap: .625rem
+  }
+  .core__column {
+    gap: .625rem
+  }
+  .core__item {
+    padding: .625rem
+  }
+  .core__title {
+    font-size: 1.375rem
+  }
 }
 @media (max-width:71.875rem) {
   .benefits__list {
@@ -1299,6 +1381,12 @@ address {
   }
   .models-tabs__navigation {
     grid-template-columns: auto
+  }
+  .core__list {
+    flex-wrap: wrap
+  }
+  .core__column {
+    flex: 1 1 33%
   }
 }
 @media (max-width:57.8125em) {
@@ -1572,8 +1660,11 @@ address {
   .page__models {
     padding-bottom: clamp(3.125rem ,2.1921641791rem + 4.6641791045vw ,6.25rem)
   }
-  .page__models {
-    margin-bottom: clamp(3.125rem ,2.1921641791rem + 4.6641791045vw ,6.25rem)
+  .page__core {
+    padding-top: clamp(3.125rem ,2.1921641791rem + 4.6641791045vw ,6.25rem)
+  }
+  .page__core {
+    padding-bottom: clamp(3.125rem ,2.1921641791rem + 4.6641791045vw ,6.25rem)
   }
   .hero__body {
     gap: clamp(.625rem ,.2518656716rem + 1.8656716418vw ,1.875rem)
@@ -1725,6 +1816,18 @@ address {
     font-size: clamp(1.5rem ,1.1641791045rem + 1.6791044776vw ,2.625rem)
   }
   .model__advantage-title {
+    font-size: clamp(1.375rem ,1.1884328358rem + .9328358209vw ,2rem)
+  }
+  .core__list {
+    gap: clamp(.625rem ,.2518656716rem + 1.8656716418vw ,1.875rem)
+  }
+  .core__column {
+    gap: clamp(.625rem ,.2518656716rem + 1.8656716418vw ,1.875rem)
+  }
+  .core__item {
+    padding: clamp(.625rem ,.2518656716rem + 1.8656716418vw ,1.875rem)
+  }
+  .core__title {
     font-size: clamp(1.375rem ,1.1884328358rem + .9328358209vw ,2rem)
   }
 }
