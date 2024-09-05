@@ -765,6 +765,48 @@ address {
 .core__more {
   padding-top: .3125rem
 }
+.spollers__item:not(:last-child) {
+  margin-bottom: 1.25rem
+}
+.spollers__title {
+  margin-top: .9375rem
+}
+.spollers__body {
+  margin-top: .9375rem
+}
+.spollers__body h3,
+.spollers__body h4,
+.spollers__body h5 {
+  font-weight: 600;
+  margin-bottom: .9375rem
+}
+.spollers__body h3 {
+  font-size: 1.625rem
+}
+.spollers__body h4 {
+  font-size: 1.5rem
+}
+.spollers__body h5 {
+  font-size: 1.375rem
+}
+.spollers__body * p {
+  margin-bottom: .9375rem
+}
+.spollers__body>p {
+  margin-bottom: .9375rem
+}
+.spollers__body * span {
+  font-weight: 600
+}
+.spollers__body ol,
+.spollers__body ul {
+  margin-top: .9375rem;
+  margin-bottom: 1.25rem
+}
+.spollers__body ol li:not(:last-child),
+.spollers__body ul li:not(:last-child) {
+  margin-bottom: .9375rem
+}
 @media (min-width:47.99875em) {
   .model__content {
     display: grid;
@@ -884,6 +926,12 @@ address {
     padding-top: 6.25rem
   }
   .page__core {
+    padding-bottom: 6.25rem
+  }
+  .page__faq {
+    padding-top: 6.25rem
+  }
+  .page__faq {
     padding-bottom: 6.25rem
   }
   .hero__body {
@@ -1176,6 +1224,12 @@ address {
     padding-top: 3.125rem
   }
   .page__core {
+    padding-bottom: 3.125rem
+  }
+  .page__faq {
+    padding-top: 3.125rem
+  }
+  .page__faq {
     padding-bottom: 3.125rem
   }
   .hero__body {
@@ -1667,6 +1721,12 @@ address {
     padding-top: clamp(3.125rem ,2.1921641791rem + 4.6641791045vw ,6.25rem)
   }
   .page__core {
+    padding-bottom: clamp(3.125rem ,2.1921641791rem + 4.6641791045vw ,6.25rem)
+  }
+  .page__faq {
+    padding-top: clamp(3.125rem ,2.1921641791rem + 4.6641791045vw ,6.25rem)
+  }
+  .page__faq {
     padding-bottom: clamp(3.125rem ,2.1921641791rem + 4.6641791045vw ,6.25rem)
   }
   .hero__body {
