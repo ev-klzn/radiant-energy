@@ -737,7 +737,7 @@ address {
 .core__item--image {
   justify-content: flex-start;
   background: url(../img/values/values.webp) center no-repeat;
-  background-size: auto 100%;
+  background-size: cover;
   display: flex;
   flex-direction: column-reverse;
   position: relative
@@ -1386,7 +1386,7 @@ address {
     flex-wrap: wrap
   }
   .core__column {
-    flex: 1 1 33%
+    flex: 1 1 40%
   }
 }
 @media (max-width:57.8125em) {
@@ -1540,6 +1540,9 @@ address {
   }
   .kit__7 {
     grid-area: 3/2/4/3
+  }
+  .core__column {
+    flex: 1 1 50%
   }
 }
 @media (max-width:47.99875em)and (max-width:20em) {
