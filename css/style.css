@@ -872,9 +872,6 @@ address {
   background-color: #020f59;
   color: #fff
 }
-.contact__container {
-  max-width: 71.25rem
-}
 .contact__subtitle {
   line-height: 1.2;
   text-align: center;
