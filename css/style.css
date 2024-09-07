@@ -430,8 +430,8 @@ address {
 }
 .about__bg {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 5%;
+  right: 1%;
   z-index: 1
 }
 .about__content {
@@ -891,8 +891,7 @@ address {
 .spollers {
   border-bottom: 1px solid #ffddb7;
   background: #fff;
-  box-shadow: 0 15px 20px 0 rgba(105,55,0,.05);
-  padding: 1.875rem 2.5rem
+  box-shadow: 0 15px 20px 0 rgba(105,55,0,.05)
 }
 .spollers__item {
   color: #616973
@@ -935,10 +934,6 @@ address {
 .spollers__body ol:not(:last-child),
 .spollers__body ul:not(:last-child) {
   margin-bottom: 1.25rem
-}
-.spollers__body ol li,
-.spollers__body ul li {
-  padding-left: .9375rem
 }
 .spollers__body ol li:not(:last-child),
 .spollers__body ul li:not(:last-child) {
@@ -1384,6 +1379,18 @@ address {
   .core__title {
     font-size: 2rem
   }
+  .spollers {
+    padding-top: 2.5rem
+  }
+  .spollers {
+    padding-bottom: 2.5rem
+  }
+  .spollers {
+    padding-left: 1.875rem
+  }
+  .spollers {
+    padding-right: 1.875rem
+  }
   .spollers__title {
     font-size: 1.5rem
   }
@@ -1748,6 +1755,18 @@ address {
   .core__title {
     font-size: 1.375rem
   }
+  .spollers {
+    padding-top: .9375rem
+  }
+  .spollers {
+    padding-bottom: .9375rem
+  }
+  .spollers {
+    padding-left: .9375rem
+  }
+  .spollers {
+    padding-right: .9375rem
+  }
   .spollers__title {
     font-size: 1.25rem
   }
@@ -2017,6 +2036,10 @@ address {
   .core__column {
     flex: 1 1 50%
   }
+  .spollers {
+    margin-left: -.9375rem;
+    margin-right: -.9375rem
+  }
   .contact__item {
     flex: 1 1 100%
   }
@@ -2033,7 +2056,9 @@ address {
     grid-template-columns: auto
   }
   .item-testimonials {
-    max-width: 25rem
+    max-width: 25rem;
+    margin-left: -.9375rem;
+    margin-right: -.9375rem
   }
   .item-testimonials__img {
     height: 2.8125rem;
@@ -2368,6 +2393,18 @@ address {
   }
   .core__title {
     font-size: clamp(1.375rem ,1.1884328358rem + .9328358209vw ,2rem)
+  }
+  .spollers {
+    padding-top: clamp(.9375rem ,.4710820896rem + 2.3320895522vw ,2.5rem)
+  }
+  .spollers {
+    padding-bottom: clamp(.9375rem ,.4710820896rem + 2.3320895522vw ,2.5rem)
+  }
+  .spollers {
+    padding-left: clamp(.9375rem ,.6576492537rem + 1.3992537313vw ,1.875rem)
+  }
+  .spollers {
+    padding-right: clamp(.9375rem ,.6576492537rem + 1.3992537313vw ,1.875rem)
   }
   .spollers__title {
     font-size: clamp(1.25rem ,1.1753731343rem + .3731343284vw ,1.5rem)
