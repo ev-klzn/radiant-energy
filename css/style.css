@@ -2043,7 +2043,7 @@ address {
     gap: .9375rem
   }
   .footer__column {
-    gap: .9375rem
+    gap: 1.25rem
   }
   .page__about {
     padding-top: 2.1875rem
@@ -2359,6 +2359,9 @@ address {
   .hero__image {
     aspect-ratio: 1922/1300
   }
+  .item-area {
+    text-align: center
+  }
   .item-benefits__header {
     text-align: center
   }
@@ -2523,6 +2526,9 @@ address {
   .footer__column {
     justify-items: center;
     text-align: center
+  }
+  .footer__link {
+    font-size: 1.25rem
   }
   .footer__devs {
     grid-template-columns: auto;
@@ -2728,7 +2734,7 @@ address {
     gap: clamp(.9375rem ,.6576492537rem + 1.3992537313vw ,1.875rem)
   }
   .footer__column {
-    gap: clamp(.9375rem ,.6576492537rem + 1.3992537313vw ,1.875rem)
+    gap: clamp(1.25rem ,1.0634328358rem + .9328358209vw ,1.875rem)
   }
   .page__about {
     padding-top: clamp(2.1875rem ,.9748134328rem + 6.0634328358vw ,6.25rem)
