@@ -268,19 +268,27 @@ body {
   cursor: pointer
 }
 ._spoller-init .spollers__title::after {
-  content: "+";
   position: absolute;
   top: 0;
   right: 0;
   color: #ff8700;
   font-size: 2.125rem;
-  transition: all .5s ease 0s
+  transition: all .5s ease 0s;
+  content: "";
+  display: inline-block;
+  background: url(img/icons/plus.svg) 0 0 no-repeat;
+  width: 30px;
+  height: 30px
+}
+._spoller-init .spollers__title::after:hover {
+  transition: .5s ease
 }
 ._spoller-init .spollers__title._spoller-active::after {
-  -webkit-transform: rotate(180deg);
-  transform: rotate(180deg);
-  color: rgba(255,136,0,.8117647059);
-  content: "-"
+  width: 30px;
+  height: 30px;
+  -webkit-transform: scale(.7);
+  transform: scale(.7);
+  background: url(img/icons/minus.svg) 0 0 no-repeat
 }
 ._spoller-init ._spoller-init .spollers__title {
   position: relative;
@@ -609,7 +617,9 @@ address {
   padding: 1.25rem;
   gap: 1.875rem;
   align-items: center;
-  grid-template-columns: auto 1fr
+  grid-template-columns: auto 1fr;
+  justify-items: center;
+  justify-content: center
 }
 .item-area__image--objects {
   width: 10rem;
@@ -620,7 +630,6 @@ address {
   aspect-ratio: 177/100
 }
 .item-area__label {
-  text-align: center;
   font-family: Roboto;
   font-weight: 500;
   text-transform: uppercase
@@ -714,7 +723,8 @@ address {
   align-items: center;
   align-self: center;
   justify-content: flex-end;
-  font-weight: 600
+  font-weight: 600;
+  font-family: Roboto
 }
 .kit__title::before {
   color: #ff8700;
@@ -1012,8 +1022,8 @@ address {
 .spollers__body h3,
 .spollers__body h4,
 .spollers__body h5 {
+  text-transform: uppercase;
   color: #2d333a;
-  font-weight: 600;
   margin-bottom: .9375rem
 }
 .spollers__body h3 {
@@ -1051,11 +1061,13 @@ address {
   background-color: #020f59;
   color: #fff
 }
+.contact__title {
+  font-weight: 700
+}
 .contact__subtitle {
   line-height: 1.2;
   text-align: center;
-  font-weight: 600;
-  text-transform: uppercase
+  font-weight: 600
 }
 .contact__list {
   display: flex;
@@ -1356,9 +1368,9 @@ address {
     grid-column-gap: 1.875rem
   }
   .installed__area {
-    -webkit-column-gap: 4.375rem;
-    -moz-column-gap: 4.375rem;
-    column-gap: 4.375rem
+    -webkit-column-gap: 3.125rem;
+    -moz-column-gap: 3.125rem;
+    column-gap: 3.125rem
   }
   .item-installed {
     padding-top: 1.25rem
@@ -1382,7 +1394,7 @@ address {
     font-size: 2rem
   }
   .item-area__label {
-    font-size: 2rem
+    font-size: 1.875rem
   }
   .benefits__list {
     gap: 1.875rem
@@ -1406,10 +1418,10 @@ address {
     font-size: 1.5rem
   }
   .type-tabs__navigation {
-    gap: 1.875rem
+    gap: 1.25rem
   }
   .type-list {
-    gap: 1.875rem
+    gap: 1.25rem
   }
   .type-item {
     gap: 1.875rem
@@ -1421,7 +1433,7 @@ address {
     padding-right: 1.875rem
   }
   .type-item__title {
-    font-size: 1.9375rem
+    font-size: 2rem
   }
   .type-item__text {
     padding-left: 1.875rem
@@ -2292,8 +2304,7 @@ address {
     left: 40%
   }
   .item-area {
-    grid-template-columns: auto;
-    justify-items: center
+    grid-template-columns: auto
   }
 }
 @media (min-width:20em)and (max-width:87em) {
@@ -2453,9 +2464,9 @@ address {
     grid-column-gap: clamp(.9375rem ,.6576492537rem + 1.3992537313vw ,1.875rem)
   }
   .installed__area {
-    -webkit-column-gap: clamp(.9375rem ,-.088619403rem + 5.1305970149vw ,4.375rem);
-    -moz-column-gap: clamp(.9375rem ,-.088619403rem + 5.1305970149vw ,4.375rem);
-    column-gap: clamp(.9375rem ,-.088619403rem + 5.1305970149vw ,4.375rem)
+    -webkit-column-gap: clamp(.9375rem ,.2845149254rem + 3.2649253731vw ,3.125rem);
+    -moz-column-gap: clamp(.9375rem ,.2845149254rem + 3.2649253731vw ,3.125rem);
+    column-gap: clamp(.9375rem ,.2845149254rem + 3.2649253731vw ,3.125rem)
   }
   .item-installed {
     padding-top: clamp(.9375rem ,.8442164179rem + .4664179104vw ,1.25rem)
@@ -2479,7 +2490,7 @@ address {
     font-size: clamp(1.625rem ,1.5130597015rem + .5597014925vw ,2rem)
   }
   .item-area__label {
-    font-size: clamp(1.25rem ,1.026119403rem + 1.1194029851vw ,2rem)
+    font-size: clamp(1.25rem ,1.0634328358rem + .9328358209vw ,1.875rem)
   }
   .benefits__list {
     gap: clamp(.9375rem ,.6576492537rem + 1.3992537313vw ,1.875rem)
@@ -2503,10 +2514,10 @@ address {
     font-size: clamp(1.25rem ,1.1753731343rem + .3731343284vw ,1.5rem)
   }
   .type-tabs__navigation {
-    gap: clamp(.9375rem ,.6576492537rem + 1.3992537313vw ,1.875rem)
+    gap: clamp(.9375rem ,.8442164179rem + .4664179104vw ,1.25rem)
   }
   .type-list {
-    gap: clamp(.9375rem ,.6576492537rem + 1.3992537313vw ,1.875rem)
+    gap: clamp(.9375rem ,.8442164179rem + .4664179104vw ,1.25rem)
   }
   .type-item {
     gap: clamp(1.25rem ,1.0634328358rem + .9328358209vw ,1.875rem)
@@ -2518,7 +2529,7 @@ address {
     padding-right: clamp(.9375rem ,.6576492537rem + 1.3992537313vw ,1.875rem)
   }
   .type-item__title {
-    font-size: clamp(1.375rem ,1.2070895522rem + .8395522388vw ,1.9375rem)
+    font-size: clamp(1.375rem ,1.1884328358rem + .9328358209vw ,2rem)
   }
   .type-item__text {
     padding-left: clamp(.9375rem ,.6576492537rem + 1.3992537313vw ,1.875rem)
