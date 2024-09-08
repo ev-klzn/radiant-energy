@@ -1149,6 +1149,9 @@ address {
   background: url(../img/icons/check.svg) 100% no-repeat
 }
 @media (min-width:47.99875em) {
+  .footer__more {
+    display: none
+  }
   .model__content {
     display: grid;
     gap: 2.1875rem;
@@ -1652,7 +1655,7 @@ address {
     padding-top: 1.875rem
   }
   .footer__container {
-    gap: 2.1875rem
+    gap: 1.25rem
   }
   .footer__about {
     gap: .9375rem
@@ -2126,6 +2129,10 @@ address {
     gap: 0;
     grid-template-columns: auto 1fr auto auto
   }
+  .footer__body {
+    display: grid;
+    gap: .9375rem
+  }
   .footer__label {
     text-align: center
   }
@@ -2133,7 +2140,9 @@ address {
     justify-items: center
   }
   .footer__links {
-    grid-template-columns: repeat(2,auto)
+    grid-template-columns: auto;
+    text-align: center;
+    justify-items: center
   }
   .footer__column {
     justify-items: center;
@@ -2270,11 +2279,6 @@ address {
   }
 }
 @media (max-width:29.99875em) {
-  .footer__links {
-    grid-template-columns: auto;
-    text-align: center;
-    justify-items: center
-  }
   .hero__body {
     top: 62%;
     left: 40%
@@ -2334,7 +2338,7 @@ address {
     padding-top: clamp(1.875rem ,1.3152985075rem + 2.7985074627vw ,3.75rem)
   }
   .footer__container {
-    gap: clamp(2.1875rem ,1.9076492537rem + 1.3992537313vw ,3.125rem)
+    gap: clamp(1.25rem ,.6902985075rem + 2.7985074627vw ,3.125rem)
   }
   .footer__about {
     gap: clamp(.9375rem ,.8442164179rem + .4664179104vw ,1.25rem)
