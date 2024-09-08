@@ -463,7 +463,8 @@ address {
 }
 .footer__socials {
   display: flex;
-  flex-wrap: wrap
+  flex-wrap: wrap;
+  row-gap: .0625rem
 }
 .footer__social-link {
   font-size: 2.5rem;
@@ -487,15 +488,18 @@ address {
   font-weight: 500;
   text-transform: uppercase;
   display: grid;
+  justify-items: center;
   align-items: center;
   align-content: center;
+  justify-content: space-between;
   gap: .9375rem;
   grid-template-columns: repeat(3,1fr)
 }
 .footer__row {
   display: flex;
   align-items: center;
-  gap: .625rem
+  gap: .625rem;
+  justify-items: space-between
 }
 .footer__row--center {
   justify-content: center
@@ -1252,7 +1256,9 @@ address {
     gap: 1.25rem
   }
   .footer__socials {
-    gap: .9375rem
+    -webkit-column-gap: .9375rem;
+    -moz-column-gap: .9375rem;
+    column-gap: .9375rem
   }
   .footer__links {
     gap: 1.875rem
@@ -1661,7 +1667,9 @@ address {
     gap: .9375rem
   }
   .footer__socials {
-    gap: .625rem
+    -webkit-column-gap: .625rem;
+    -moz-column-gap: .625rem;
+    column-gap: .625rem
   }
   .footer__links {
     gap: .9375rem
@@ -2150,7 +2158,8 @@ address {
   }
   .footer__devs {
     grid-template-columns: auto;
-    justify-items: center
+    justify-items: center;
+    justify-content: center
   }
   .hero__image {
     aspect-ratio: 1922/1400
@@ -2344,7 +2353,9 @@ address {
     gap: clamp(.9375rem ,.8442164179rem + .4664179104vw ,1.25rem)
   }
   .footer__socials {
-    gap: clamp(.625rem ,.5317164179rem + .4664179104vw ,.9375rem)
+    -webkit-column-gap: clamp(.625rem ,.5317164179rem + .4664179104vw ,.9375rem);
+    -moz-column-gap: clamp(.625rem ,.5317164179rem + .4664179104vw ,.9375rem);
+    column-gap: clamp(.625rem ,.5317164179rem + .4664179104vw ,.9375rem)
   }
   .footer__links {
     gap: clamp(.9375rem ,.6576492537rem + 1.3992537313vw ,1.875rem)
@@ -2722,9 +2733,8 @@ address {
   }
   .footer__social-link:hover {
     color: #ff8700;
-    -webkit-transform: rotate(5deg);
-    transform: rotate(5deg);
-    scale: 1.1
+    -webkit-transform: rotate(5deg) scale(1.1);
+    transform: rotate(5deg) scale(1.1)
   }
   .footer__link:hover {
     color: #ff8700
