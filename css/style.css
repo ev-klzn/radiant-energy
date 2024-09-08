@@ -498,8 +498,7 @@ address {
 .footer__row {
   display: flex;
   align-items: center;
-  gap: .625rem;
-  justify-items: space-between
+  gap: .625rem
 }
 .footer__row--center {
   justify-content: center
