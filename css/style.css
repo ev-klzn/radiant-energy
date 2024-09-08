@@ -29,6 +29,9 @@
 ._icon-tiktok:before {
   content: ""
 }
+._icon-youtube:before {
+  content: ""
+}
 * {
   padding: 0;
   margin: 0;
@@ -553,8 +556,7 @@ address {
 }
 .installed {
   color: #fff;
-  background: url(../img/installed.webp) 0 0 no-repeat;
-  background-size: auto 100%
+  background: url(../img/installed.webp) 0 0 no-repeat
 }
 .installed__list {
   display: grid;
@@ -823,15 +825,11 @@ address {
   align-items: center;
   align-content: center
 }
-.best__img {
-  max-width: 51.8125rem
-}
 .best__image {
   aspect-ratio: 829/600
 }
 .together {
-  background: url(../img/installed.webp) 0 0 no-repeat;
-  background-size: auto 100%
+  background: url(../img/installed.webp) 0 0 no-repeat
 }
 .together__container {
   text-align: center
@@ -1251,7 +1249,7 @@ address {
     gap: 1.25rem
   }
   .footer__socials {
-    gap: 1.25rem
+    gap: .9375rem
   }
   .footer__links {
     gap: 1.875rem
@@ -2342,7 +2340,7 @@ address {
     gap: clamp(.9375rem ,.8442164179rem + .4664179104vw ,1.25rem)
   }
   .footer__socials {
-    gap: clamp(.625rem ,.4384328358rem + .9328358209vw ,1.25rem)
+    gap: clamp(.625rem ,.5317164179rem + .4664179104vw ,.9375rem)
   }
   .footer__links {
     gap: clamp(.9375rem ,.6576492537rem + 1.3992537313vw ,1.875rem)
@@ -2720,8 +2718,9 @@ address {
   }
   .footer__social-link:hover {
     color: #ff8700;
-    -webkit-transform: rotate(10deg);
-    transform: rotate(10deg)
+    -webkit-transform: rotate(5deg);
+    transform: rotate(5deg);
+    scale: 1.1
   }
   .footer__link:hover {
     color: #ff8700
