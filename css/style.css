@@ -280,9 +280,6 @@ body {
   width: 30px;
   height: 30px
 }
-._spoller-init .spollers__title::after:hover {
-  transition: .5s ease
-}
 ._spoller-init .spollers__title._spoller-active::after {
   width: 30px;
   height: 30px;
