@@ -287,12 +287,12 @@ body {
   right: 0;
   color: #ff8700;
   font-size: 2.125rem;
-  transition: all .5s;
   font-family: Montserrat;
   content: "+";
   display: inline-block;
   width: 34px;
-  height: 34px
+  height: 34px;
+  transition: all .5s
 }
 ._spoller-init .spollers__title._spoller-active {
   transition: all .5s
@@ -1588,6 +1588,9 @@ address {
   .spollers__title {
     padding-right: .9375rem
   }
+  ._spoller-init .spollers__title::after {
+    padding-left: .9375rem
+  }
   .spollers__body {
     padding: 1.875rem
   }
@@ -2003,6 +2006,9 @@ address {
   }
   .spollers__title {
     padding-right: 1.5625rem
+  }
+  ._spoller-init .spollers__title::after {
+    padding-left: .625rem
   }
   .spollers__body {
     padding: .9375rem
@@ -2694,6 +2700,9 @@ address {
   }
   .spollers__title {
     padding-right: clamp(.9375rem ,1.7490671642rem + -.9328358209vw ,1.5625rem)
+  }
+  ._spoller-init .spollers__title::after {
+    padding-left: clamp(.625rem ,.5317164179rem + .4664179104vw ,.9375rem)
   }
   .spollers__body {
     padding: clamp(.9375rem ,.6576492537rem + 1.3992537313vw ,1.875rem)
