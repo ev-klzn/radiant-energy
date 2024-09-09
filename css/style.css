@@ -553,8 +553,7 @@ address {
   position: relative
 }
 .hero__image {
-  aspect-ratio: 1922/923;
-  min-height: 21.875rem
+  aspect-ratio: 1922/923
 }
 .hero__body {
   max-width: 41.5625rem;
@@ -1531,6 +1530,12 @@ address {
   }
 }
 @media (min-width:61.99875em) {
+  .page__hero {
+    min-height: 50rem
+  }
+  .hero__image {
+    min-height: 46.25rem
+  }
   .installed__list {
     grid-template-columns: repeat(4,1fr);
     grid-template-rows: 1fr
