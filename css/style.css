@@ -552,7 +552,8 @@ address {
   -webkit-transform: translate(0,-50%);
   transform: translate(0,-50%);
   z-index: 5;
-  background-color: #fff
+  background-color: #fff;
+  border-radius: .25rem
 }
 .hero__title {
   font-weight: 600;
@@ -976,6 +977,7 @@ address {
   aspect-ratio: 1.5/1
 }
 .best {
+  background-color: #fff;
   display: flex;
   display: grid;
   min-width: 0;
@@ -989,15 +991,24 @@ address {
   grid-column: 1/6
 }
 .best__body {
-  border-radius: 4px;
-  border-bottom: 1px solid #ffddb7;
-  background-color: #fff;
-  box-shadow: 0 15px 20px 0 rgba(105,55,0,.05);
+  padding-top: 1.875rem;
+  padding-bottom: 1.875rem;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+  margin-right: 1.875rem
+}
+.best__box {
   flex-basis: 56.25rem;
   display: grid;
   justify-items: center;
   align-items: center;
-  align-content: center
+  align-content: center;
+  border-radius: 4px;
+  border-bottom: 1px solid #ffddb7;
+  background-color: #fff;
+  box-shadow: 0 15px 20px 0 rgba(105,55,0,.05)
 }
 .best__text {
   opacity: 0;
@@ -1038,7 +1049,8 @@ address {
   color: #fff;
   font-family: Roboto;
   font-weight: 500;
-  border-bottom: 1px solid transparent
+  border-bottom: 1px solid transparent;
+  transition: color .3s
 }
 .together-tab__title {
   max-width: 50rem;
@@ -1318,38 +1330,38 @@ address {
 .spollers__body h5 {
   text-transform: uppercase;
   color: #2d333a;
-  margin-bottom: .9375rem
+  margin-bottom: .3125rem;
+  font-size: 1.25rem
 }
-.spollers__body h3 {
-  margin-bottom: 1.25rem
+.spollers__body h4 {
+  font-size: 1.0625rem
+}
+.spollers__body h5 {
+  font-size: 1.0625rem
 }
 .spollers__body * p {
   font-size: 1.0625rem
 }
 .spollers__body * p:not(:last-child) {
-  margin-bottom: .9375rem
+  margin-bottom: .625rem
 }
 .spollers__body>p {
   font-size: 1.0625rem
 }
 .spollers__body>p:not(:last-child) {
-  margin-bottom: .9375rem
+  margin-bottom: .625rem
 }
 .spollers__body * span {
   color: #2d333a;
   font-weight: 600
 }
-.spollers__body ol,
-.spollers__body ul {
-  margin-top: .9375rem
-}
 .spollers__body ol:not(:last-child),
 .spollers__body ul:not(:last-child) {
-  margin-bottom: 1.25rem
+  margin-bottom: .625rem
 }
 .spollers__body ol li:not(:last-child),
 .spollers__body ul li:not(:last-child) {
-  margin-bottom: .9375rem
+  margin-bottom: .625rem
 }
 .contact {
   background-color: #020f59;
@@ -1652,8 +1664,8 @@ address {
   .page__kit {
     padding-bottom: 4.0625rem
   }
-  .page__best {
-    padding-top: 5rem
+  .page__kit {
+    margin-bottom: 5rem
   }
   .page__best {
     margin-bottom: 6.25rem
@@ -1808,18 +1820,21 @@ address {
     padding: 1.875rem
   }
   .best__body {
+    flex-basis: 59.375rem
+  }
+  .best__box {
     gap: 2.5rem
   }
-  .best__body {
+  .best__box {
     padding-top: 1.875rem
   }
-  .best__body {
+  .best__box {
     padding-bottom: 1.875rem
   }
-  .best__body {
+  .best__box {
     padding-left: 2.5rem
   }
-  .best__body {
+  .best__box {
     padding-right: 2.5rem
   }
   .together__title:not(:last-child) {
@@ -1888,15 +1903,6 @@ address {
   .spollers__title {
     font-size: 1.5rem
   }
-  .spollers__body h3 {
-    font-size: 1.625rem
-  }
-  .spollers__body h4 {
-    font-size: 1.5rem
-  }
-  .spollers__body h5 {
-    font-size: 1.375rem
-  }
   .contact__title {
     margin-bottom: 3.125rem
   }
@@ -1937,6 +1943,11 @@ address {
     gap: .625rem
   }
 }
+@media (min-width:160em) {
+  .best__body {
+    margin-right: 1.875rem
+  }
+}
 @media (max-width:87em) {
   .kit__6 {
     flex-wrap: wrap;
@@ -1954,6 +1965,12 @@ address {
   .kit__7-image {
     padding-top: .9375rem;
     min-height: 11.25rem
+  }
+}
+@media (max-width:62em) {
+  .best__body {
+    margin-right: .9375rem;
+    margin: 0
   }
 }
 @media (max-width:48em) {
@@ -2066,8 +2083,8 @@ address {
   .page__kit {
     padding-bottom: 1.5625rem
   }
-  .page__best {
-    padding-top: 1.5625rem
+  .page__kit {
+    margin-bottom: 3.125rem
   }
   .page__best {
     margin-bottom: 3.125rem
@@ -2207,18 +2224,21 @@ address {
     padding-right: .9375rem
   }
   .best__body {
+    flex-basis: 75rem
+  }
+  .best__box {
     gap: 1.875rem
   }
-  .best__body {
+  .best__box {
     padding-top: 1.25rem
   }
-  .best__body {
+  .best__box {
     padding-bottom: 1.25rem
   }
-  .best__body {
+  .best__box {
     padding-left: .9375rem
   }
-  .best__body {
+  .best__box {
     padding-right: .9375rem
   }
   .together__title:not(:last-child) {
@@ -2286,15 +2306,6 @@ address {
   }
   .spollers__title {
     font-size: 1.25rem
-  }
-  .spollers__body h3 {
-    font-size: 1.375rem
-  }
-  .spollers__body h4 {
-    font-size: 1.25rem
-  }
-  .spollers__body h5 {
-    font-size: 1.1875rem
   }
   .contact__title {
     margin-bottom: 1.875rem
@@ -2378,6 +2389,9 @@ address {
   .kit__3 {
     display: flex;
     flex-direction: column-reverse
+  }
+  .best__body {
+    padding-bottom: 0
   }
   .best__img {
     max-width: -webkit-max-content;
@@ -2760,8 +2774,8 @@ address {
   .page__kit {
     padding-bottom: clamp(1.5625rem ,.8162313433rem + 3.7313432836vw ,4.0625rem)
   }
-  .page__best {
-    padding-top: clamp(1.5625rem ,.536380597rem + 5.1305970149vw ,5rem)
+  .page__kit {
+    margin-bottom: clamp(3.125rem ,2.5652985075rem + 2.7985074627vw ,5rem)
   }
   .page__best {
     margin-bottom: clamp(3.125rem ,2.1921641791rem + 4.6641791045vw ,6.25rem)
@@ -2901,18 +2915,21 @@ address {
     padding-right: clamp(.9375rem ,.6576492537rem + 1.3992537313vw ,1.875rem)
   }
   .best__body {
+    flex-basis: clamp(59.375rem ,79.6641791045rem + -23.3208955224vw ,75rem)
+  }
+  .best__box {
     gap: clamp(1.875rem ,1.6884328358rem + .9328358209vw ,2.5rem)
   }
-  .best__body {
+  .best__box {
     padding-top: clamp(1.25rem ,1.0634328358rem + .9328358209vw ,1.875rem)
   }
-  .best__body {
+  .best__box {
     padding-bottom: clamp(1.25rem ,1.0634328358rem + .9328358209vw ,1.875rem)
   }
-  .best__body {
+  .best__box {
     padding-left: clamp(.9375rem ,.4710820896rem + 2.3320895522vw ,2.5rem)
   }
-  .best__body {
+  .best__box {
     padding-right: clamp(.9375rem ,.4710820896rem + 2.3320895522vw ,2.5rem)
   }
   .together__title:not(:last-child) {
@@ -2980,15 +2997,6 @@ address {
   }
   .spollers__title {
     font-size: clamp(1.25rem ,1.1753731343rem + .3731343284vw ,1.5rem)
-  }
-  .spollers__body h3 {
-    font-size: clamp(1.375rem ,1.3003731343rem + .3731343284vw ,1.625rem)
-  }
-  .spollers__body h4 {
-    font-size: clamp(1.25rem ,1.1753731343rem + .3731343284vw ,1.5rem)
-  }
-  .spollers__body h5 {
-    font-size: clamp(1.1875rem ,1.1315298507rem + .2798507463vw ,1.375rem)
   }
   .contact__title {
     margin-bottom: clamp(1.875rem ,1.5018656716rem + 1.8656716418vw ,3.125rem)
@@ -3079,6 +3087,11 @@ address {
     padding: clamp(.9375rem ,-.2163461538rem + 2.4038461538vw ,1.875rem)
   }
 }
+@media (min-width:62em)and (max-width:160em) {
+  .best__body {
+    margin-right: clamp(.9375rem ,.3443877551rem + .9566326531vw ,1.875rem)
+  }
+}
 @media (any-hover:hover) {
   .button--white:hover {
     color: #fff
@@ -3119,6 +3132,9 @@ address {
     background-color: #ff8700;
     border: 1px solid #ff8700;
     color: #fff
+  }
+  .together-tab__titles:hover {
+    color: #ff8700
   }
   .models-tabs__title:hover {
     background-color: #ff8700;
