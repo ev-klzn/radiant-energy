@@ -279,47 +279,33 @@ body {
 }
 ._spoller-init .spollers__title {
   cursor: pointer;
-  transition: all .5s
+  transition: all .3s
 }
 ._spoller-init .spollers__title::after {
+  content: "+";
+  transition: all .3s;
   position: absolute;
   top: 0;
   right: 0;
   color: #ff8700;
   font-size: 2.125rem;
-  font-family: Montserrat;
-  content: "+";
-  display: inline-block;
   width: 34px;
   height: 34px;
-  transition: all .5s
+  font-family: Montserrat;
+  display: inline-block
 }
 ._spoller-init .spollers__title._spoller-active {
-  transition: all .5s
+  transition: all .3s
 }
 ._spoller-init .spollers__title._spoller-active::after {
-  transition: all .5s;
+  transition: all .3s;
   content: "-";
   font-size: 2.125rem;
   width: 34px;
   height: 34px;
-  opacity: .5
-}
-._spoller-init ._spoller-init .spollers__title {
-  position: relative;
-  width: 100%;
-  text-align: left;
-  transition: all .5s
-}
-._spoller-init ._spoller-init .spollers__title::after {
-  content: "";
-  position: absolute;
-  right: 0;
-  top: .75rem;
-  height: .0625rem;
-  transition: all .3s ease 0s;
-  width: .625rem;
-  background-color: #a68181
+  opacity: .5;
+  -webkit-transform: rotateX(45deg);
+  transform: rotateX(45deg)
 }
 .spollers__body {
   font-size: 1.0625rem
