@@ -279,33 +279,28 @@ body {
 }
 ._spoller-init .spollers__title {
   cursor: pointer;
-  transition: all .3s
+  position: relative;
+  transition: all .5s
 }
-._spoller-init .spollers__title::after {
-  content: "+";
-  transition: all .3s;
+._spoller-init .spollers__title::before {
+  content: "";
   position: absolute;
-  top: 0;
   right: 0;
-  color: #ff8700;
-  font-size: 2.125rem;
-  width: 34px;
-  height: 34px;
-  font-family: Montserrat;
-  display: inline-block
+  top: 20%;
+  display: inline-block;
+  background: url(../img/icons/plus.svg) 0 0 no-repeat;
+  background-size: cover;
+  width: 24px;
+  height: 24px;
+  transition: all .5s ease 0s
 }
-._spoller-init .spollers__title._spoller-active {
-  transition: all .3s
-}
-._spoller-init .spollers__title._spoller-active::after {
-  transition: all .3s;
-  content: "-";
-  font-size: 2.125rem;
-  width: 34px;
-  height: 34px;
-  opacity: .5;
-  -webkit-transform: rotateX(45deg);
-  transform: rotateX(45deg)
+._spoller-init .spollers__title._spoller-active::before {
+  background: url(../img/icons/minus.svg) 0 0 no-repeat;
+  background-size: cover;
+  width: 20px;
+  height: 20px;
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg)
 }
 .spollers__body {
   font-size: 1.0625rem
@@ -378,18 +373,20 @@ address {
   font-style: normal
 }
 .subtitle-transparent {
+  font-family: Montserrat;
+  color: transparent;
   line-height: 1.1;
   text-align: center;
-  color: transparent;
-  font-style: normal;
-  font-family: Roboto;
-  -webkit-text-stroke-width: .125rem;
-  -webkit-text-stroke-color: #ffddb7;
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: .9375rem
+  position: relative;
+  z-index: 1;
+  color: #f6f7f8;
+  text-shadow: 1px 1px 0 #ffddb7,-1px -1px 0 #ffddb7,1px -1px 0 #ffddb7,-1px 1px 0 #ffddb7,1px 1px 0 #ffddb7
 }
 .subtitle-color {
+  position: relative;
+  z-index: 2;
   line-height: 1.2;
   text-align: center;
   font-weight: 700;
@@ -567,7 +564,12 @@ address {
   position: absolute;
   top: 5%;
   right: 1%;
-  z-index: 1
+  z-index: 0;
+  aspect-ratio: 2/1.5;
+  height: 80%
+}
+.about__container {
+  position: relative
 }
 .about__content {
   background-color: #fff;
@@ -660,6 +662,9 @@ address {
   font-family: Roboto;
   font-weight: 500;
   text-transform: uppercase
+}
+.benefits__container {
+  position: relative
 }
 .benefits__list {
   display: grid;
@@ -792,6 +797,9 @@ address {
   font-weight: 500;
   text-transform: uppercase
 }
+.kit__container {
+  position: relative
+}
 .kit__list {
   display: grid;
   grid-template-columns: repeat(6,1fr)
@@ -841,9 +849,9 @@ address {
   opacity: 1
 }
 .kit__2-image {
-  padding-top: 1.25rem;
-  padding-bottom: 1.25rem;
-  aspect-ratio: 1796/1040
+  height: 100%;
+  width: 100%;
+  aspect-ratio: 1796/1550
 }
 .kit__3 {
   background-color: #fff;
@@ -866,7 +874,7 @@ address {
   content: "1"
 }
 .kit__3-image {
-  aspect-ratio: 1/1.5
+  aspect-ratio: 1/1.9
 }
 .kit__4 {
   display: flex;
@@ -1083,8 +1091,14 @@ address {
 .models {
   background: #fff
 }
+.models__container {
+  position: relative
+}
 .models__label {
   font-family: Roboto
+}
+.models__subtitle {
+  color: #fff
 }
 .models-tabs__navigation {
   border-radius: .25rem;
@@ -1434,6 +1448,9 @@ address {
   flex-wrap: wrap;
   justify-content: center
 }
+.testimonials__container {
+  position: relative
+}
 .testimonials__list {
   display: grid;
   grid-template-columns: repeat(3,1fr);
@@ -1591,20 +1608,20 @@ address {
   .spollers__title {
     padding-right: .9375rem
   }
-  ._spoller-init .spollers__title::after {
-    padding-left: .9375rem
-  }
   .spollers__body {
     padding: 1.875rem
   }
   .subtitle-transparent {
-    font-size: 7.5rem
+    letter-spacing: .9375rem
+  }
+  .subtitle-transparent {
+    font-size: 6.25rem
   }
   .subtitle-color {
     font-size: 2.625rem
   }
   .subtitle-color--margin-top {
-    margin-top: -2.8125rem
+    margin-top: -2.1875rem
   }
   .subtitle-color--margin-bottom {
     margin-bottom: 2.5rem
@@ -2015,11 +2032,11 @@ address {
   .spollers__title {
     padding-right: 1.5625rem
   }
-  ._spoller-init .spollers__title::after {
-    padding-left: .625rem
-  }
   .spollers__body {
     padding: .9375rem
+  }
+  .subtitle-transparent {
+    letter-spacing: .625rem
   }
   .subtitle-transparent {
     font-size: 1.5625rem
@@ -2028,7 +2045,7 @@ address {
     font-size: 1.625rem
   }
   .subtitle-color--margin-top {
-    margin-top: -1.25rem
+    margin-top: -.9375rem
   }
   .subtitle-color--margin-bottom {
     margin-bottom: 1.5625rem
@@ -2556,6 +2573,9 @@ address {
   .hero__title {
     line-height: 1.2
   }
+  .about__bg {
+    max-width: 34.375rem
+  }
   .about__content {
     margin-left: -.9375rem;
     margin-right: -.9375rem
@@ -2706,20 +2726,20 @@ address {
   .spollers__title {
     padding-right: clamp(.9375rem ,1.7490671642rem + -.9328358209vw ,1.5625rem)
   }
-  ._spoller-init .spollers__title::after {
-    padding-left: clamp(.625rem ,.5317164179rem + .4664179104vw ,.9375rem)
-  }
   .spollers__body {
     padding: clamp(.9375rem ,.6576492537rem + 1.3992537313vw ,1.875rem)
   }
   .subtitle-transparent {
-    font-size: clamp(1.5625rem ,-.2098880597rem + 8.8619402985vw ,7.5rem)
+    letter-spacing: clamp(.625rem ,.5317164179rem + .4664179104vw ,.9375rem)
+  }
+  .subtitle-transparent {
+    font-size: clamp(1.5625rem ,.1632462687rem + 6.9962686567vw ,6.25rem)
   }
   .subtitle-color {
     font-size: clamp(1.625rem ,1.3264925373rem + 1.4925373134vw ,2.625rem)
   }
   .subtitle-color--margin-top {
-    margin-top: clamp(-2.8125rem ,-.7835820896rem + -2.3320895522vw ,-1.25rem)
+    margin-top: clamp(-2.1875rem ,-.5643656716rem + -1.8656716418vw ,-.9375rem)
   }
   .subtitle-color--margin-bottom {
     margin-bottom: clamp(1.5625rem ,1.2826492537rem + 1.3992537313vw ,2.5rem)
