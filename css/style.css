@@ -290,8 +290,8 @@ body {
   display: inline-block;
   background: url(../img/icons/plus.svg) 0 0 no-repeat;
   background-size: cover;
-  width: 24px;
-  height: 24px;
+  width: 20px;
+  height: 20px;
   transition: all .5s ease 0s
 }
 ._spoller-init .spollers__title._spoller-active::before {
