@@ -692,22 +692,22 @@ address {
   transform: translate(0,0)
 }
 .item-benefits._watcher-view:nth-child(1) {
-  transition-delay: .2s
+  transition-delay: 175ms
 }
 .item-benefits._watcher-view:nth-child(2) {
-  transition-delay: .3s
+  transition-delay: .25s
 }
 .item-benefits._watcher-view:nth-child(3) {
-  transition-delay: .4s
+  transition-delay: 325ms
 }
 .item-benefits._watcher-view:nth-child(4) {
-  transition-delay: .5s
+  transition-delay: .4s
 }
 .item-benefits._watcher-view:nth-child(5) {
-  transition-delay: .6s
+  transition-delay: 475ms
 }
 .item-benefits._watcher-view:nth-child(6) {
-  transition-delay: .7s
+  transition-delay: .55s
 }
 .item-benefits__header {
   display: flex;
@@ -1145,8 +1145,7 @@ address {
 }
 .model__content {
   gap: 1.875rem;
-  align-content: center;
-  justify-items: center
+  align-content: center
 }
 .model__image {
   aspect-ratio: 660/580
@@ -1174,34 +1173,34 @@ address {
   transform: translate(0,0)
 }
 .model__advantage._watcher-view:nth-child(1) {
-  transition-delay: .2s
+  transition-delay: 175ms
 }
 .model__advantage._watcher-view:nth-child(2) {
-  transition-delay: .3s
+  transition-delay: .25s
 }
 .model__advantage._watcher-view:nth-child(3) {
-  transition-delay: .4s
+  transition-delay: 325ms
 }
 .model__advantage._watcher-view:nth-child(4) {
-  transition-delay: .5s
+  transition-delay: .4s
 }
 .model__advantage._watcher-view:nth-child(5) {
-  transition-delay: .6s
+  transition-delay: 475ms
 }
 .model__advantage._watcher-view:nth-child(6) {
-  transition-delay: .7s
+  transition-delay: .55s
 }
 .model__advantage._watcher-view:nth-child(7) {
-  transition-delay: .8s
+  transition-delay: 625ms
 }
 .model__advantage._watcher-view:nth-child(8) {
-  transition-delay: .9s
+  transition-delay: .7s
 }
 .model__advantage._watcher-view:nth-child(9) {
-  transition-delay: 1s
+  transition-delay: 775ms
 }
 .model__advantage._watcher-view:nth-child(10) {
-  transition-delay: 1.1s
+  transition-delay: .85s
 }
 .model__advantage::before {
   margin-left: -2.8125rem;
@@ -1443,6 +1442,7 @@ address {
   font-weight: 800
 }
 .contact__actions {
+  text-align: center;
   display: flex;
   gap: 1.875rem;
   flex-wrap: wrap;
@@ -1477,22 +1477,22 @@ address {
   transform: translate(0,0)
 }
 .item-testimonials._watcher-view:nth-child(1) {
-  transition-delay: .25s
+  transition-delay: 175ms
 }
 .item-testimonials._watcher-view:nth-child(2) {
-  transition-delay: .4s
+  transition-delay: .25s
 }
 .item-testimonials._watcher-view:nth-child(3) {
-  transition-delay: .55s
+  transition-delay: 325ms
 }
 .item-testimonials._watcher-view:nth-child(4) {
-  transition-delay: .7s
+  transition-delay: .4s
 }
 .item-testimonials._watcher-view:nth-child(5) {
-  transition-delay: .85s
+  transition-delay: 475ms
 }
 .item-testimonials._watcher-view:nth-child(6) {
-  transition-delay: 1s
+  transition-delay: .55s
 }
 .item-testimonials__content {
   display: grid;
@@ -1682,7 +1682,7 @@ address {
     padding-bottom: 4.0625rem
   }
   .page__kit {
-    margin-bottom: 5rem
+    margin-bottom: 2.5rem
   }
   .page__best {
     margin-bottom: 6.25rem
@@ -2006,6 +2006,9 @@ address {
   .kit__body {
     padding: .9375rem
   }
+  .testimonials__list {
+    gap: .9375rem
+  }
 }
 @media (max-width:20em) {
   .button {
@@ -2083,25 +2086,25 @@ address {
     padding-bottom: 2.1875rem
   }
   .page__benefits {
-    padding-top: 3.125rem
+    padding-top: 2.5rem
   }
   .page__benefits {
     padding-bottom: 2.5rem
   }
   .page__type {
-    padding-top: 3.125rem
+    padding-top: 2.5rem
   }
   .page__type {
     padding-bottom: 2.5rem
   }
   .page__kit {
-    padding-top: 3.125rem
+    padding-top: 2.5rem
   }
   .page__kit {
     padding-bottom: 1.5625rem
   }
   .page__kit {
-    margin-bottom: 3.125rem
+    margin-bottom: 1.25rem
   }
   .page__best {
     margin-bottom: 3.125rem
@@ -2113,31 +2116,31 @@ address {
     padding-bottom: 3.125rem
   }
   .page__models {
-    padding-top: 3.125rem
+    padding-top: 2.5rem
   }
   .page__models {
     padding-bottom: 3.125rem
   }
   .page__core {
-    padding-top: 3.125rem
+    padding-top: 2.5rem
   }
   .page__core {
     padding-bottom: 3.125rem
   }
   .page__faq {
-    padding-top: 3.125rem
+    padding-top: 2.5rem
   }
   .page__faq {
     padding-bottom: 3.125rem
   }
   .page__contact {
-    padding-top: 3.125rem
+    padding-top: 2.5rem
   }
   .page__contact {
     padding-bottom: 3.125rem
   }
   .page__testimonials {
-    padding-top: 3.125rem
+    padding-top: 2.5rem
   }
   .page__testimonials {
     padding-bottom: 3.125rem
@@ -2351,9 +2354,6 @@ address {
   .contact__count {
     font-size: 3.125rem
   }
-  .testimonials__list {
-    gap: .9375rem
-  }
   .item-testimonials {
     padding: .9375rem
   }
@@ -2375,6 +2375,14 @@ address {
   }
 }
 @media (max-width:61.99875em) {
+  .button {
+    max-width: 100%
+  }
+  .button--white {
+    width: 100%;
+    text-align: center;
+    display: flex
+  }
   .menu__list {
     row-gap: 1.375rem
   }
@@ -2636,13 +2644,7 @@ address {
     font-weight: 400
   }
   .testimonials__list {
-    justify-content: center;
     grid-template-columns: auto
-  }
-  .item-testimonials {
-    max-width: 25rem;
-    margin-left: -.9375rem;
-    margin-right: -.9375rem
   }
   .item-testimonials__img {
     height: 2.8125rem;
@@ -2699,6 +2701,10 @@ address {
   }
   .item-area {
     grid-template-columns: auto
+  }
+  .item-testimonials {
+    margin-left: -.9375rem;
+    margin-right: -.9375rem
   }
 }
 @media (min-width:20em)and (max-width:87em) {
@@ -2777,25 +2783,25 @@ address {
     padding-bottom: clamp(2.1875rem ,.9748134328rem + 6.0634328358vw ,6.25rem)
   }
   .page__benefits {
-    padding-top: clamp(3.125rem ,2.5652985075rem + 2.7985074627vw ,5rem)
+    padding-top: clamp(2.5rem ,1.7537313433rem + 3.7313432836vw ,5rem)
   }
   .page__benefits {
     padding-bottom: clamp(2.5rem ,2.0335820896rem + 2.3320895522vw ,4.0625rem)
   }
   .page__type {
-    padding-top: clamp(3.125rem ,2.5652985075rem + 2.7985074627vw ,5rem)
+    padding-top: clamp(2.5rem ,1.7537313433rem + 3.7313432836vw ,5rem)
   }
   .page__type {
     padding-bottom: clamp(2.5rem ,2.0335820896rem + 2.3320895522vw ,4.0625rem)
   }
   .page__kit {
-    padding-top: clamp(3.125rem ,2.5652985075rem + 2.7985074627vw ,5rem)
+    padding-top: clamp(2.5rem ,1.7537313433rem + 3.7313432836vw ,5rem)
   }
   .page__kit {
     padding-bottom: clamp(1.5625rem ,.8162313433rem + 3.7313432836vw ,4.0625rem)
   }
   .page__kit {
-    margin-bottom: clamp(3.125rem ,2.5652985075rem + 2.7985074627vw ,5rem)
+    margin-bottom: clamp(1.25rem ,.8768656716rem + 1.8656716418vw ,2.5rem)
   }
   .page__best {
     margin-bottom: clamp(3.125rem ,2.1921641791rem + 4.6641791045vw ,6.25rem)
@@ -2807,31 +2813,31 @@ address {
     padding-bottom: clamp(3.125rem ,2.3787313433rem + 3.7313432836vw ,5.625rem)
   }
   .page__models {
-    padding-top: clamp(3.125rem ,2.1921641791rem + 4.6641791045vw ,6.25rem)
+    padding-top: clamp(2.5rem ,1.3805970149rem + 5.5970149254vw ,6.25rem)
   }
   .page__models {
     padding-bottom: clamp(3.125rem ,2.1921641791rem + 4.6641791045vw ,6.25rem)
   }
   .page__core {
-    padding-top: clamp(3.125rem ,2.1921641791rem + 4.6641791045vw ,6.25rem)
+    padding-top: clamp(2.5rem ,1.3805970149rem + 5.5970149254vw ,6.25rem)
   }
   .page__core {
     padding-bottom: clamp(3.125rem ,2.1921641791rem + 4.6641791045vw ,6.25rem)
   }
   .page__faq {
-    padding-top: clamp(3.125rem ,2.1921641791rem + 4.6641791045vw ,6.25rem)
+    padding-top: clamp(2.5rem ,1.3805970149rem + 5.5970149254vw ,6.25rem)
   }
   .page__faq {
     padding-bottom: clamp(3.125rem ,2.1921641791rem + 4.6641791045vw ,6.25rem)
   }
   .page__contact {
-    padding-top: clamp(3.125rem ,2.1921641791rem + 4.6641791045vw ,6.25rem)
+    padding-top: clamp(2.5rem ,1.3805970149rem + 5.5970149254vw ,6.25rem)
   }
   .page__contact {
     padding-bottom: clamp(3.125rem ,2.1921641791rem + 4.6641791045vw ,6.25rem)
   }
   .page__testimonials {
-    padding-top: clamp(3.125rem ,2.1921641791rem + 4.6641791045vw ,6.25rem)
+    padding-top: clamp(2.5rem ,1.3805970149rem + 5.5970149254vw ,6.25rem)
   }
   .page__testimonials {
     padding-bottom: clamp(3.125rem ,2.1921641791rem + 4.6641791045vw ,6.25rem)
@@ -3045,9 +3051,6 @@ address {
   .contact__count {
     font-size: clamp(3.125rem ,2.5652985075rem + 2.7985074627vw ,5rem)
   }
-  .testimonials__list {
-    gap: clamp(.9375rem ,.6576492537rem + 1.3992537313vw ,1.875rem)
-  }
   .item-testimonials {
     padding: clamp(.9375rem ,.8442164179rem + .4664179104vw ,1.25rem)
   }
@@ -3106,6 +3109,9 @@ address {
   .kit__body {
     padding: clamp(.9375rem ,-.2163461538rem + 2.4038461538vw ,1.875rem)
   }
+  .testimonials__list {
+    gap: clamp(.9375rem ,-.2163461538rem + 2.4038461538vw ,1.875rem)
+  }
 }
 @media (min-width:62em)and (max-width:160em) {
   .best__body {
@@ -3138,9 +3144,7 @@ address {
     color: #ff8700
   }
   .footer__social-link:hover {
-    color: #ff8700;
-    -webkit-transform: rotate(5deg) scale(1.1);
-    transform: rotate(5deg) scale(1.1)
+    color: #ff8700
   }
   .footer__link:hover {
     color: #ff8700
