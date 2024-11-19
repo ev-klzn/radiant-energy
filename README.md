@@ -1,3 +1,3 @@
 # radiant-energy
 
-https://ev-klzn.com/radiant-energy/
+https://webintersol.com/radiant-energy/
