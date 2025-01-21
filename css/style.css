@@ -506,13 +506,9 @@ address {
   font-size: .75rem;
   font-weight: 500;
   text-transform: uppercase;
-  display: grid;
-  justify-items: center;
-  align-items: center;
-  align-content: center;
-  justify-content: space-between;
-  gap: .9375rem;
-  grid-template-columns: repeat(3,1fr)
+  display: flex;
+  justify-content: center;
+  align-items: center
 }
 .footer__row {
   display: flex;
@@ -2565,11 +2561,6 @@ address {
   }
   .footer__link {
     font-size: 1.25rem
-  }
-  .footer__devs {
-    grid-template-columns: auto;
-    justify-items: center;
-    justify-content: center
   }
   .hero__image {
     aspect-ratio: 1922/1400
